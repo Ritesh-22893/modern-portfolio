@@ -1,0 +1,71 @@
+
+/* FAQS section starts */
+.faq-section{
+    height: calc(100vh - 5rem);
+    height: auto;
+    margin-top: 2rem;
+  }
+  
+  .faq-section .questions-answers{
+   margin-top: 1rem;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  gap: 1rem 2rem;
+  align-items: flex-start;
+  } 
+  
+  .faq-section .QandA{
+   
+     display: flex;
+     flex-direction: column;
+     gap: 0.4rem;
+     border-radius: 1rem;
+    /* align-items: center;
+    justify-content: center; */
+    height: auto;
+    width: auto;
+    background-color: rgb(49, 63, 82);
+    background-color: rgb(28, 39, 112); 
+    background-color: rgb(16, 24, 75);
+
+    transition: all 1s ease;
+  
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+  .faq-section  .question h3{
+    margin-top: 1rem; 
+    /* padding: 10rem; */
+    color: var(--span-bg);
+  
+    border: 1px solid red;
+  }
+  
+  
+  .faq-section .question .down-arrow{
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    background:none;
+    border: none;
+    font-size: 1rem;
+    /* padding: 1rem; */
+    cursor: pointer;
+  }
+  
+  .faq-section .answer{
+    display: none;
+    transition: all 1s ease;
+  
+    font-size: 1rem;
+    color: rgb(212, 202, 202);
+    font-weight: 600;
+    padding:0 1rem ;
+  }
+  
+  .faq-section button{
+    width: 2vw;
+  }
+  
+  /* FAQs section ends */
+  

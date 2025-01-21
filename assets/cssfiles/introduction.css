@@ -1,0 +1,129 @@
+/* first-section stars from here */
+
+.first-section {
+    padding-top: 7rem;
+    height: fit-content;
+    /* width: 100%; */
+    width: calc(100vw-4rem);
+    display: flex;
+    gap: 4rem;
+    /* margin-top: 2rem; */
+  }
+  
+  .introduction-section {
+    font-size: 1.6rem;
+    width: 60%;
+    height: auto;
+    /* margin-top: 5rem; */
+  }
+  
+  .introduction-section h1 {
+    color: rgb(106, 104, 216);
+    /* font-size: 4rem; */
+  }
+  
+  .introduction-section span {
+    /* color: rgb(177, 179, 76); */
+    color: rgb(161, 163, 12);
+  
+    font-weight: bolder;
+  }
+  
+  .introduction-section p {
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  
+  .introduction-section p strong {
+    font-size: 1.2rem;
+    color: rgb(177, 179, 76);
+    margin-top: 3rem;
+  }
+  
+  .introduction-section .action-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .introduction-section .action-buttons #resume-btn {
+    height: 3rem;
+    width: fit-content;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    color: rgb(51, 41, 179);
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+  }
+  
+  .introduction-section .action-buttons #info-btn {
+    height: 3rem;
+    width: fit-content;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(51, 41, 179);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+  }
+  
+  
+  .introduction-section .action-buttons #info-btn a {
+  text-decoration: none;
+  color: white;
+  }
+  
+  .introduction-section .action-buttons #info-btn:hover {
+    scale: 115%;
+  }
+  .introduction-section .action-buttons #resume-btn:hover {
+    scale: 115%;
+  }
+  
+  /* display: flex;
+      width: 40%;
+      height: (100vh-4rem);
+      /* mix-blend-mode: */
+  /* filter: brightness(0.25); */
+  /* filter:brightness(95%) ; */
+  /* filter: sepia(100%); */
+  
+  .image-section img {
+    /* filter: ;*/
+    /* mix-blend-mode: multiply ; */
+    /* filter: grayscale(); */
+    /* top: 100px; */
+    /* filter: blur(3px); */
+    /* height: 480px; */
+    width: 450px;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    border-radius: 50%;
+    /* mix-blend-mode: multiply; */
+    /* transform: rotate(20deg); */
+  }
+  
+  .image-section img:hover {
+    /* filter: ;*/
+    /* mix-blend-mode: multiply ; */
+    /* height: 70vh;
+      height: 28rem;
+      width: 28rem;
+      width: 70vh; */
+    /* scale: calc(4/5); */
+    transition: all 1s ease;
+  }
+  

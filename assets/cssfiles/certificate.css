@@ -1,0 +1,20 @@
+.certificate-section{
+    margin-top: 2rem;
+    height: auto;
+}
+.certificate-list {
+   display: flex;
+  /* margin-top: 2rem; */
+  gap: 2rem;
+}
+
+.certificate-list .received-certificates{
+    width: 50vw;
+    padding: 1rem;
+    background-color: rgb(14, 83, 83);
+}
+
+.certificate-list .received-certificates img{
+    height: 25rem;
+    width: fit-content;
+}

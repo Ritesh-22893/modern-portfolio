@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ritesh - FrontEnd Developer</title>
+
+    <!-- poppins font  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--cdn of font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- cdn of iconscout icons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!-- css of overall website -->
+    <link rel="stylesheet" href="style.css" />
+
+ <!-- css of header section -->
+ <link rel="stylesheet" href="/assets/cssfiles/header.css">
+
+  <!-- css of floating navbar -->
+  <link rel="stylesheet" href="/assets/cssfiles/floatingnavbar.css">
+
+
+     <!-- css of introduction section -->
+     <link rel="stylesheet" href="/assets/cssfiles/introduction.css">
+
+      <!-- css of project section -->
+    <link rel="stylesheet" href="/assets/cssfiles/project.css">
+
+     <!-- css of team project section -->
+     <link rel="stylesheet" href="/assets/cssfiles/teamproject.css">
+
+    <!-- css of resume section  -->
+    <link rel="stylesheet" href="/assets/cssfiles/resume.css" />
+
+    <!-- css of certificates section -->
+    <link rel="stylesheet" href="/assets/cssfiles/certificate.css" />
+
+
+    <!-- css of faq -->
+    <link rel="stylesheet" href="/assets/cssfiles/faq.css">
+
+    <!-- css of contactme -->
+    <link rel="stylesheet" href="/assets/cssfiles/contactme.css">
+
+    <!-- css of footer -->
+    <link rel="stylesheet" href="/assets/cssfiles/footer.css">
+
+
+
+    <!-- css of responsive -->
+    <link rel="stylesheet" href="/assets/cssfiles/responsive.css">
+
+
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./assets/profileImages/_RiteshLogo.png" alt="LOGO" />
+        </div>
+        <div class="factAboutMe">
+          <!-- <strong>Fact About Me</strong> -->
+          <h3>
+            "Hardworking fellow looking for opportunity to shine and rise"
+          </h3>
+        </div>
+
+        <div class="navbar-items">
+          <!-- <li><a href="#home">Home</a></li> -->
+          <a href="#"><i class="fa-solid fa-house active"></i></a>
+          <!-- <li><a href="#projects">Projects</a></li> -->
+          <a href="#project"><i class="fa-solid fa-list-check"></i></a>
+          <!-- <li><a href="#education">Education</a></li> -->
+          <a href="#resume"><i class="fa-solid fa-user"></i></a>
+          <!-- <li><a href="#services">Services</a></li> -->
+          <a href="#certificate"><i class="fa-solid fa-star"></i></a>
+          <!-- <li><a href="#services">Services</a></li> -->
+          <a href="#faqs"><i class="fa-solid fa-question"></i></a>
+          <!-- <li><a href="#contact">Contact</a></li> -->
+          <a href="#contact"><i class="fa-solid fa-phone"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- introduction section begins -->
+      <section class="first-section" id="#">
+        <div class="introduction-section">
+          <h1>Hi 👋</h1>
+          <h2>
+            I'm <span>Ritesh Pokhrel</span> a passionate <br /><span
+              id="element"
+            ></span>
+          </h2>
+
+          <p>
+            Currnetly studying Bsc. CSIT at Butwal Mutiple Campus with a knack
+            for crafting beautiful, functional websites and user interfaces. I
+            specialize in
+            <strong>HTML</strong>, <strong>CSS</strong>,
+            <strong>JavaScript</strong>, and <strong>React</strong>, creating
+            seamless user experiences that bring ideas to life.
+          </p>
+          <p><strong>Let's build something amazing together!</strong></p>
+          <div class="action-buttons">
+            <button id="info-btn"><a href="#contact">Contact Me</a></button>
+            <button id="resume-btn">Get Resume<i class="fa-solid fa-download"></i></button>
+
+          </div>
+        </div>
+
+        <div class="image-section">
+          <!-- <img src="./assets/banbatika.jpg" alt="" /> -->
+          <!-- <img src="./assets/banbatika-removebg-preview.png" alt="" /> -->
+
+          <img src="./assets/profileImages/ritesh_coverImage.png" alt="" />
+          <!-- <img src="./assets/EDV-Photo.jpg" alt="" /> -->
+        </div>
+      </section>
+      <!-- introduction section ends -->
+
+
+      <!-- Projects Section Begins  -->
+      <section id="project" class="project-section">
+        <h1>My <span>Projects</span></h1>
+
+        <div class="projects">
+          <div id="project1" class="project">
+            <h2>Todolist - The List Tracker</h2>
+            <a href="https://todolist-ritesh.vercel.app/" target="_blank"
+              ><img src="./assets/projectImages/todolistproject.png" alt=""
+            /></a>
+            <p>
+              A <span>Todolist</span> built using
+              <span>React, TailwindCSS</span> organize your todos and make your
+              day productive.
+            </p>
+            <button class="site-btn">Visit Website</button>
+          </div>
+          <div id="project2" class="project">
+            <h2>CODOLEARN - Learning Platform</h2>
+            <a href="https://codolearn.vercel.app/" target="_blank"
+              ><img src="./assets/projectImages/codolearnproject.png" alt="" />
+            </a>
+
+            <p>
+              A <span>learning website</span> for passionate individuals to get
+              necesaary skills for becoming a well established programmer. It is
+              built using <span>React, TailwindCSS</span> to develop skills and
+              enhance them in today's world.
+            </p>
+            <button class="site-btn">Visit Website</button>
+          </div>
+          <div id="project3" class="project">
+            <h2>Currency Converter</h2>
+
+            <a href="https://currencyconverter-ritesh.vercel.app/" target="_blank"
+              ><img
+                src="./assets/projectImages/currencyconverterproject.png"
+                alt=""
+            /></a>
+            <p>
+              A <span>currency converting</span> that provides exchange rate for
+              currencies of various countries , built using
+              <span>HTML, CSS, JavaScript</span>
+            </p>
+            <button class="site-btn">Visit Website</button>
+          </div>
+          <div id="project4" class="project">
+            <h2>AutoRikshaw UI Design</h2>
+            <a href="" target="_blank"
+              ><img
+                src="./assets/projectImages/AutoRikshaw-Website_Design.jpg"
+                alt=""
+            /></a>
+            <p>
+              A <span>currency converting</span> that provides exchange rate for
+              currencies of various countries , built using
+              <span>HTML, CSS, JavaScript</span>
+            </p>
+            <button class="site-btn">Visit Website</button>
+          </div>
+        </div>
+      </section>
+      <!-- Projects Section Ends  -->
+
+      <!-- Team Project section starts -->
+      <section class="team-project-section">
+        <h1>Team <span>Project</span></h1>
+
+        <div id="team-project1" class="team-project">
+          <h2>FOOD2HUNGER - Eradicating Hunger</h2>
+          <a href="https://food2-hunger.vercel.app/"  
+            ><img src="./assets/projectImages/todolistproject.png" alt=""
+          /></a>
+          <p>
+            <span>FOOD2HUNGER </span>is a fullstack web app built using <span>Frontend tech </span> as 
+            <span>Vite, bootstrap, Typescript, TailwindCSS</span> 
+            and  <span>Backend tech </span>as
+            <span>Nodejs, Expressjs,  MongoDB. </span>  
+            It <span>helps</span> in <span>Eradicating hunger</span> improving quality of life and providing basic human needs like <Span>Right To Food</Span>
+          </p>
+          <button class="site-btn">Visit Website</button>
+        </div>
+      </section>
+      <!-- Team Project section ends -->
+
+      <!-- Resume section starts -->
+      <section id="resume" class="resume-section">
+        <h1><span>Resume</span></h1>
+
+        <div class="resume-container">
+          <div class="resume-left">
+            <h2>Why <span>hire</span> me ?</h2>
+            <p>
+              I am self-learned, team-oriented, friendly developer with perfect
+              skillset that you are looking for.
+            </p>
+            <button class="btn primary-btn skills-btn">Skills</button>
+            <button class="btn education-btn">Education</button>
+            <button class="btn experience-btn">Experience</button>
+            <button class="btn aboutme-btn">About Me</button>
+          </div>
+          <div class="resume-right">
+            <!-- <div class="skills-section">
+              <h2><span>Frontend Skills</span></h2>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-js"></i>
+              <i class="fa-brands fa-react"></i>
+              </div>
+               <div class="backend-skills">
+              <h2><span>Backend Skills</span></h2>
+              <i class="fa-brands fa-node"></i>
+               </div>
+            </div> -->
+
+            <!-- <div class="education-section">
+
+              <div id="secondary" class="education-level">
+                <h3><span>Secondary</span> Level</h3>
+                <h4>( 2019 - 2021 )</h4>
+                <p>
+                  Completed <span>SEE</span> with <span>4.00 GPA</span> from
+                  <span> Shankarnagar Durgadutta School </span>
+                  located at Rupandehi, Tilottama - 1
+                </p>
+              </div>
+              <div id="highersecondary" class="education-level">
+                <h3><span>Higher</span> Secondary Level</h3>
+                <h4>( 2021 - 2023 )</h4>
+                <p>
+                  Completed <span>+2</span> with <span>3.36 GPA</span> from
+                  <span> Tilottama Campus </span>
+                  located at Rupandehi, Tilottama - 5
+                </p>
+              </div>
+              <div id="bachelor" class="education-level">
+                <h3><span>Bachelor</span> Level</h3>
+                <h4>( 2023 - Present )</h4>
+                <p>
+                  Studying <span>Bsc. CSIT</span><span></span> from
+                  <span> Butwal Multiple Campus </span>
+                  located at Rupandehi, Butwal - Golpark
+                </p>
+              </div>
+            </div> -->
+
+            <!-- experience section starts -->
+
+            <!-- <div class="experience-section">
+              <div id="gracathon" class="experience-level">
+                <h3><span>Gracathon</span> Event</h3>
+                <img
+                  src="./assets/certificates/gracathon.jpg"
+                  alt="gracathon_certificate"
+                />
+                <p>
+                  Participated in gracathon representing
+                  <span>FOOD2HUNGER</span>
+                  along with team members diving deep in the field of web
+                  development.
+                </p>
+              </div>
+            </div> -->
+
+            <!-- aboutme section starts -->
+            <div class="aboutme-section">
+              <h2><span>About</span> Me</h2>
+              <p class="heading">
+                Born and live at <span>Butwal</span>, with keen interest in
+                becoming a self-sustain, self-established personna.
+              </p>
+              <div class="aboutme-info">
+                <div class="left">
+                  <h4 class="properties"><span>Name</span> : Ritesh Pokhrel</h4>
+                  <h4 class="properties">
+                    <span>Experience</span> : 2+ yesars
+                  </h4>
+                  <h4 class="properties">
+                    <span>language</span> : English, Nepali
+                  </h4>
+                  <h4 class="properties"><span>Nationality</span> : Nepal</h4>
+                </div>
+                <div class="right">
+                  <h4 class="properties">
+                    <span>Email</span> : riteshpokhrel73@gmail.com
+                  </h4>
+                  <h4 class="properties">
+                    <span>Phone</span> : +977 9815461099, 9767611249
+                  </h4>
+                  <h4 class="properties">
+                    <span>Linkdin</span> : Ritesh Pokhrel
+                  </h4>
+                  <h4 class="properties">
+                    <span>Hobbies</span> : Exploring AI, Self-studying, Chess
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resume section ends -->
+
+      <!-- graduation section starts -->
+
+      <div id="certificate" class="certificate-section" >
+        <h1><span>Certificates</span></h1>
+        <!-- <h2>Some certificates <span>received during my journey</span></h2> -->
+        <div class="certificate-list">
+          <div class="received-certificates">
+            <img src="./assets/certificates/IT_certificates_02_new.jpg" alt="">
+          </div>
+          <div class="received-certificates">
+            <img src="./assets/certificates/IT_certificates_02_new.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+      <!-- graduation section ends -->
+
+
+      <!-- FAQs section starts -->
+      <section id="faqs" class="faq-section">
+        <h1><span>FAQ</span></h1>
+        <h2>
+          Some of the <span>commonly asked</span> questions and their answers !
+        </h2>
+
+        <menu class="questions-answers">
+        
+          <div class="QandA" >
+            <h3 id="question1"  class="question">
+              <!-- <i class="fa-solid fa-angle-up"> -->
+              <button class="down-arrow"><i class="fa-solid fa-angle-down"></i></i></button>
+              Where did you  <span> learn web development </span>?</h3>
+          <p id="answer1" class="answer">
+            I learn web development from <span>online resources,</span> mainly from <span>youtube, watching tutorials</span>
+             and <span>reading documentaries</span> circulation in the web.
+          </p>
+        </div>
+
+        <div class="QandA" >
+          <h3 id="question2"  class="question">
+            <!-- <i class="fa-solid fa-angle-up"> -->
+            <button class="down-arrow"><i class="fa-solid fa-angle-down "></i></i></button>
+            How <span>long</span> have you <span>been in  web development </span>?</h3>
+        <p id="answer2" class="answer">
+          I have been enrolled in this field of web development from the <span>past 2 years with some amazing projects</span> learning in depth whether it is simple or a complex topic. I find it amusing as well as proud when completing a project that i have been working for a while. 
+        </p>
+      </div>
+
+
+        <div class="QandA" >
+          <h3 id="question3"  class="question">
+            <!-- <i class="fa-solid fa-angle-up"> -->
+            <button class="down-arrow"><i class="fa-solid fa-angle-down"></i></i></button>
+            Are you in both <span>frontend</span> and <span>backend</span> development ?</h3>
+        <p id="answer3" class="answer">
+          I am mostly concerned in frontend but i have done some projects as well as have good grip of backend web development too. I use technologies like nodejs, express and mongodb for backend projects. I can even built a fullstack web app. 
+        </p>
+      </div>
+
+      <div class="QandA" >
+        <h3 id="question4"  class="question">
+          <!-- <i class="fa-solid fa-angle-up"> -->
+          <button class="down-arrow"><i class="fa-solid fa-angle-down "></i></i></button>
+          How many <span>clients</span> have you <span>worked with </span> ?</h3>
+      <p id="answer4" class="answer">
+      Speaking the truth, i have <span>satisfied more than 4 clients</span> with my work as per their suggestion and request. I have <span>received quite good feedback</span> from my clients. 
+      </p>
+    </div> 
+
+
+    <div class="QandA" >
+      <h3 id="question5"  class="question">
+        <!-- <i class="fa-solid fa-angle-up"> -->
+        <button class="down-arrow"><i class="fa-solid fa-angle-down "></i></i></button>
+        What is <span>your inspiration</span> ?</h3>
+    <p id="answer5" class="answer">
+      Personally my inspiration is <span>Steve Jobs.</span> I am deeply <span>inspired</span> by his journey, his passion as well as his vision towards technology. He is surely my  <span>role model.</span>
+    </p>
+  </div> 
+
+
+  <div class="QandA" >
+    <h3 id="question6"  class="question">
+      <!-- <i class="fa-solid fa-angle-up"> -->
+      <button class="down-arrow"><i class="fa-solid fa-angle-down "></i></i></button>
+      What your <span>opinion on</span> evolving <span>Artificial Intelligence</span> ?</h3>
+  <p id="answer6" class="answer">
+    With remarkable advancement in AI, I am <span>little bit afraid</span> that it will took our jobs in the near future. But, why to bother when you can <span>enjoy the present as it is !</span> 
+  </p>
+</div> 
+
+
+        </menu>
+      </section>
+
+      <!-- FAQs section ends -->
+
+      <!-- Education section starts -->
+      <!-- <section id="education" class="education-section">
+        <h1><span>Education</span></h1>
+        <div class="title-education">
+        </div>
+        <div class="education-container">
+          <div class="date-in-years">
+            <h2 class="years-title">YEARS</h2>
+
+            <div id="first-year">
+              <div class="horizontal-line"></div>
+              <h2><span>2019</span> - <span>2021</span></h2>
+            </div>
+            <div id="second-year">
+              <div class="horizontal-line"></div>
+              <h2><span>2021</span> - <span>2023</span></h2>
+            </div>
+            <div id="third-year">
+              <div class="horizontal-line"></div>
+              <h2><span>2023</span> - <span>Present</span></h2>
+            </div>
+          </div>
+          <div class="vertical-line"></div>
+
+          <div class="education">
+            <h2 class="title-education">EDUCATON</h2>
+            <div id="first-education">
+              <div class="horizontal-line"></div>
+              <div class="actual-content">
+                <h2>
+                  Completed <span>SEE</span> with <span>4.00 GPA</span> from
+                  <span>
+                    <h3>Shankarnagar Durgadutta School</h3>
+                  </span>
+                  located at Rupandehi, Tilottama - 1
+                </h2>
+              </div>
+            </div>
+            <div id="second-education">
+              <div class="horizontal-line"></div>
+              <div class="actual-content">
+                <h2>
+                  Completed <span>+2</span> with <span>3.36 GPA</span> from
+                  <span>
+                    <h3>Tilottama Campus</h3>
+                  </span>
+                  located at Rupandehi, Tilottama - 5
+                </h2>
+              </div>
+            </div>
+            <div id="third-education">
+              <div class="horizontal-line"></div>
+              <div class="actual-content">
+                <h2>
+                  Studying <span>Bsc. CSIT</span><span></span> from
+                  <span>
+                    <h3>Butwal Multiple Campus</h3>
+                  </span>
+                  located at Rupandehi, Butwal - Golpark
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- Education section ends -->
+
+      <!-- contact section starts -->
+      <section id="contact" class="contact-section">
+        <h1><span>Contact</span> Me</h1>
+        <div class="contact-container">
+          <div class="left-section">
+
+          <form action="">
+            <h2>Send a Message</h2>
+            <input type="text" name="Name" placeholder="Full Name" />
+            <input type="email" name="Email" placeholder=" Email Address" />
+            <textarea rows="6" name="Message" placeholder="Message"></textarea>
+            <button type="submit" class="btn">SUBMIT</button>
+          </form>
+        </div>
+    <div class="middle-section">
+    <h2>Lets <span>Chat !</span></h2>
+    <h3 class="letsBuild">Lets build something together</h3>
+
+    <div id="location"  class="info-box">
+      <i class="fa-solid fa-location-dot"></i>
+      <div>
+      <h4>Visit me at</h4>
+      <h3><span>Tilottama - 1, Drivertole</span></h3>
+    </div>
+    </div>
+  
+    <div id="call" class="info-box">
+      <i class="fa-solid fa-phone"></i>
+      <div>
+        <h4>Call me on</h4>
+        <h3><span>9815461099, 9767611249</span></h3>
+      </div>
+    </div>
+
+    <div id="mail" class="info-box">
+      <i class="fa-solid fa-envelope"></i>
+      <div>
+        <h4>Mail me on</h4>
+        <h3><span>riteshpokhrel73@gamil.com</span></h3>
+      </div>
+    </div>
+   </div>
+   <div class="right-section">
+    <div class="links-section">
+      <a href="https://github.com/Ritesh-22893/"  target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-figma"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+   </div>
+</div>
+      </section>
+      <!-- contact section ends -->
+
+
+    </main>
+
+    
+    <footer class="footer-section">
+<!--       
+      <div class="logo">
+        <img src="./assets/profileImages/_RiteshLogo.png" alt="LOGO" />
+      </div> -->
+
+      
+      <div class="links-section">
+          <a href="https://github.com/Ritesh-22893/"  target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-figma"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    
+<!-- heart icon -->
+ <div class="middle-part">
+ <p>Copyright ©2025 All rights reserved | made with  <i class="fa-solid fa-heart"></i> by</p>
+ <div class="logo">
+  <img src="./assets/profileImages/_RiteshLogo.png" alt="LOGO" />
+</div>
+</div>
+
+<div class="right-">
+
+</div>
+
+<div class="bottom-row">
+  <!-- <span>Coding is like a fun game</span> -->
+</div>
+  </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+/* floating navbar section css */
+
+.navbar-items {
+    height: 4.3rem;
+    width: fit-content;
+    background-color: rgb(17, 22, 119);
+    background-color: rgba(13, 40, 221, 0.1);
+  
+    /* background-color: rgb(172, 173, 194); */
+  
+    /* background-color: rgb(53, 15, 104); */
+  
+    /* background-color: rgb(69, 56, 116); */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: fixed;
+    left: 50%;
+    /* bottom: 2rem; */
+    bottom: -8rem;
+    transform: translateX(-50%) scale(0);
+    border-radius: 50px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 1rem 2rem;
+    animation: animateNavbarItems 1s 1.5s ease forwards;
+    opacity: 0;
+  }
+  @keyframes animateNavbarItems {
+    to {
+      bottom: 2rem;
+      transform: translateX(-50%) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .navbar-items a {
+    text-decoration: none;
+  }
+  
+  .navbar-items a i {
+    display: flex;
+    color: white;
+    cursor: pointer;
+    /* background-color: transparent; */
+  }
+  
+  .navbar-items a .active {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    /* background-color: rgb(44, 50, 163); */
+    background-color: rgb(161, 163, 12);
+    background-color: rgb(17, 22, 119);
+    background-color: rgb(49, 58, 233);
+    background-color: rgb(42, 57, 155);
+    height: 3rem;
+    color: white;
+  }
+  
+  .navbar-items ul li i {
+    background-color: transparent;
+  }
+  
+  

@@ -1,0 +1,31 @@
+
+/* Team Project section starts  */
+.team-project-section {
+    margin-top: 3rem;
+    width: 97vw;
+    height: calc(100vh-6rem);
+    padding-right: 3rem;
+  
+  }
+  .team-project {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   padding: 4rem;
+   padding: 1rem 1.6rem;
+   margin-top: 1rem;
+   border-radius: 1rem;
+    background-color: rgb(16, 24, 75);
+  }
+  .team-project h2{
+    color: rgb(185, 192, 228);
+  
+  }
+  
+  
+  .team-project img {
+    height: 60vh;
+    width: 100%;
+    border-radius: 1rem;
+  }
+  /* Team Project section ends  */

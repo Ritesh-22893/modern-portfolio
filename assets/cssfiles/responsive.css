@@ -1,0 +1,68 @@
+/* -------media queries for responsive design------ */
+
+@media (max-width: 420px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 0.4rem;
+  }
+  /* body{
+      background-color: blue;
+    } */
+  .navbar .logo img {
+    /* display: none;   */
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .navbar .factAboutMe {
+    display: none;
+  }
+  main {
+    padding: 1rem;
+  }
+  /* introduction section texts */
+  .first-section {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0rem;
+    /* margin-left: 2rem; */
+  }
+  .introduction-section {
+    width: 100%;
+  }
+  .first-section .image-section img {
+    margin-top: 1rem;
+    width: 240px;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+  .introduction-section p {
+    display: none;
+  }
+  .introduction-section .action-buttons{
+   margin-top: 1rem;
+  }
+  .introduction-section .action-buttons #info-btn{
+    font-size: 0.8rem;
+    height: 2.7rem;
+    padding: 0.6rem;
+
+  }
+  .introduction-section .action-buttons #resume-btn{
+    font-size: 0.8rem;
+    height: 2.7rem;
+    padding: 0.5rem;
+
+  }
+}

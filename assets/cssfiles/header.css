@@ -1,0 +1,54 @@
+
+.navbar {
+    height: 1rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 40px 40px;
+  
+    /* background-color: rgb(17, 24, 116); */
+    background-color: rgb(12, 19, 63);
+  
+    /* background-color: rgb(63, 28, 110); */
+    /* background-color: rgb(53, 15, 104); */
+  
+    /* background-color: rgb(51, 41, 179); */
+    /* background-color: rgb(32, 25, 133); */
+  
+    height: 1rem;
+    /* justify-content: space-between; */
+    gap: 10rem;
+    z-index: 100;
+    position: fixed;
+  }
+  
+  /* .navbar .factAboutMe strong {
+      color: rgb(251, 255, 0);
+      ;
+      font-weight: bolder;
+  } */
+  
+  .navbar .factAboutMe h3 {
+    color: rgb(207, 199, 84);
+    letter-spacing: 1px;
+    /* font-weight: 500; */
+  }
+  
+  .navbar .logo img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    /* height: 4.8rem; */
+    width: 11rem;
+    /* color: rgb(165, 230, 101); */
+    filter: invert(100%);
+    cursor: pointer;
+    /* background-color: aqua; */
+    /* filter: grayscale(100%); */
+    /* filter: brightness(0.25); */
+    /* filter:brightness(95%) ; */
+    /* filter: blur(1px); */
+    /* filter: sepia(100%); */
+  }
+  

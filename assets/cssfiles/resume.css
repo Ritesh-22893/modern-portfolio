@@ -1,0 +1,114 @@
+/* About me section starts */
+.resume-section {
+  margin-top: 3rem;
+  /* height: calc(100vh - 9rem); */
+  height: auto;
+}
+#resume h3 {
+  /* color:rgb(142, 154, 233); */
+  font-size: 1.6rem;
+}
+
+.resume-section .resume-container {
+  display: flex;
+  padding: 1rem;
+  gap: 8vw;
+  /* background-color: rgb(40, 40, 110); */
+  height: inherit;
+}
+.resume-section .resume-container .resume-left {
+  /* background-color: rgb(79, 104, 104); */
+  width: 30%;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  gap: 1vh;
+}
+.resume-left p {
+  font-size: 1.1rem;
+}
+.resume-left .btn {
+  margin-top: 0.5rem;
+  background-color: rgb(95, 110, 202);
+  background-color: rgb(62, 68, 110);
+  /* background-color: rgba(75, 97, 36, 0); */
+
+  font-size: 1.1rem;
+  color: rgb(207, 193, 193);
+  color: white;
+}
+
+.resume-left .btn:hover {
+  cursor: pointer;
+  background-color: rgb(42, 57, 155);
+  background-color: rgb(28, 39, 112);
+}
+
+.resume-section .resume-container .resume-right {
+  width: 60%;
+}
+/* About me section ends */
+
+/* skills section */
+
+.resume-right .skills-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.resume-right .skills-section i {
+  /* padding:1rem 3rem 3rem 0rem; */
+  /* background: red; */
+  font-size: 4rem;
+  margin: 1rem 3rem;
+  margin-left: 0;
+}
+
+/* education section */
+.education-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.education-section .education-level {
+  /* background-color: rgb(28, 39, 112); */
+  padding: 1rem;
+  padding-top: 0.5rem;
+  border-radius: 1rem;
+}
+
+.education-section .education-level h4 {
+  color: rgb(142, 154, 233);
+  font-size: 1.1rem;
+}
+
+.education-section .education-level p {
+  color: rgb(142, 154, 233);
+  font-size: 1.1rem;
+}
+
+.experience-section #gracathon {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.experience-section img {
+  height: 40vh;
+  width: 50vw;
+}
+
+.aboutme-section .aboutme-info {
+  margin-top: 1rem;
+  display: flex;
+  gap: 4rem;
+}
+
+.aboutme-section .heading {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+.aboutme-section .properties {
+  font-size: 1.1rem;
+  margin-top: 1.6rem;
+}

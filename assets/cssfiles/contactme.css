@@ -1,0 +1,125 @@
+.contact-section {
+  height: auto;
+  /* height: auto; */
+  margin-top: 3rem;
+}
+
+.contact-section .contact-container {
+  display: flex;
+  /* justify-content: start; */
+  gap: 5vw;
+}
+.contact-section .contact-container form {
+  /* height: 60%; */
+  width: 40vw;
+  display: flex;
+  margin-top: 1rem;
+  /* justify-content: center;
+  align-items: center; */
+  gap: 1.2rem;
+  flex-direction: column;
+  border: 1px soid white;
+  border-radius: 1rem;
+  /* background-color: rgb(8, 18, 77);
+  background-color: rgb(34, 32, 32);
+  background-color: #0d183d;
+  background-color: #132357; */
+  background-color: rgb(16, 24, 75);
+
+  padding: 1rem 2rem 2rem;
+}
+.contact-container form h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(184, 182, 86);
+  color: rgb(22, 77, 139);
+  color: rgb(223, 216, 216);
+
+  /* margin-bottom: 1rem; */
+}
+.contact-container form input,
+textarea,
+.btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  outline: none;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: rgb(192, 184, 184);
+  background-color: #a5a8b3;
+
+  background-color: rgb(37, 38, 100);
+
+  color: rgb(34, 32, 32);
+  color: rgb(168, 158, 158);
+  color: white;
+  font-weight: 600;
+}
+
+.contact-section form .btn {
+  /* background-color: rgb(65, 82, 197); */
+  background-color: rgb(42, 57, 155);
+
+  color: rgb(207, 193, 193);
+  color: white;
+}
+
+.contact-section form .btn:hover {
+  cursor: pointer;
+  /* background-color: rgb(42, 57, 155); */
+  background-color: rgb(65, 82, 197);
+}
+
+.contact-container .middle-section {
+  display: flex;
+  flex-direction: column;
+}
+.middle-section{
+  margin-top: 2rem;
+}
+.middle-section .info-box {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0rem;
+  padding: 1rem;
+  /* border: 1px solid black; */
+  border: none;
+  border-radius: 1rem;
+  background-color: rgb(9, 18, 75);
+}
+.middle-section .info-box i {
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: rgb(167, 163, 163);
+  background-color: rgb(18, 19, 97);
+}
+.middle-section .letsBuild {
+  color: rgb(192, 184, 184);
+}
+
+.right-section{
+  margin-top: 4rem;
+}
+.right-section .links-section a {
+  display: flex;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  border: 10px solid wihte;
+  margin-top: 2rem;
+}
+
+.right-section .links-section a:hover {
+  /* padding: 0.4rem;x   */
+  transform: scale(115%);
+  cursor: pointer;
+  background-color: rgb(38, 46, 187);
+}
+
+.right-section .links-section a i {
+  font-size: 2rem;
+  padding: 0.4rem;
+}
