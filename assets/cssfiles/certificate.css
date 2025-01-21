@@ -16,5 +16,5 @@
 
 .certificate-list .received-certificates img{
     height: 25rem;
-    width: fit-content;
+    width: 100%;
 }
