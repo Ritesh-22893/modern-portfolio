@@ -9,9 +9,12 @@
   /* justify-content: start; */
   gap: 5vw;
 }
+.contact-section .contact-container .left-section{
+  width: 40%;
+}
 .contact-section .contact-container form {
   /* height: 60%; */
-  width: 40vw;
+  width: auto;
   display: flex;
 
   margin-top: 1rem;
@@ -84,7 +87,7 @@ textarea,
   display: flex;
   gap: 1rem;
   margin: 1rem 0rem;
-  /* width: fit-content; */
+  width: fit-content;
   padding: 1rem;
   /* border: 1px solid black; */
   border: none;
