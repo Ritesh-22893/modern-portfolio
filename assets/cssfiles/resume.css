@@ -94,7 +94,7 @@
 }
 
 .experience-section img {
-  height: 40vh;
+  height: max-content;
   width: 50vw;
 }
 

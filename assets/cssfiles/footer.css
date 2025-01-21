@@ -8,6 +8,7 @@
   display: flex;
   
   justify-content:space-around ;
+  align-items: center;
   padding: 40px 40px;
 
   /* background-color: rgb(17, 24, 116); */
@@ -16,6 +17,7 @@
 
 .footer-section .links-section {
   display: flex;
+  align-items: center;
   border-radius: 10px;
   text-decoration: none;
   color: white;
@@ -41,8 +43,13 @@
   align-items: center;
   justify-content: center;
 }
+.footer-section .right-part{
+  display: flex;
+  letter-spacing: 1px;
+  align-items: center;
+}
 
-.footer-section .middle-part i{
+.footer-section .right-part i{
  font-size: 1.3rem;
  color: red;
 }
@@ -53,8 +60,8 @@ footer .logo img {
   justify-content: center; */
   right: 1rem;
   font-weight: 700;
-  /* height: 7rem; */
-  width: 8rem;
+  height: 6rem;
+  width: 9rem;
 
   /* color: rgb(165, 230, 101); */
   filter: invert(100%);

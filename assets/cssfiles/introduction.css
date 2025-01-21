@@ -6,6 +6,7 @@
     /* width: 100%; */
     width: calc(100vw-4rem);
     display: flex;
+    /* flex-wrap: wrap; */
     gap: 4rem;
     /* margin-top: 2rem; */
   }
@@ -100,7 +101,10 @@
   /* filter: brightness(0.25); */
   /* filter:brightness(95%) ; */
   /* filter: sepia(100%); */
-  
+  .image-section{
+    width: 40%;
+  }
+
   .image-section img {
     /* filter: ;*/
     /* mix-blend-mode: multiply ; */
@@ -109,6 +113,7 @@
     /* filter: blur(3px); */
     /* height: 480px; */
     width: 450px;
+    width: 32vw;
     aspect-ratio: 1/1;
     background-size: cover;
     border-radius: 50%;

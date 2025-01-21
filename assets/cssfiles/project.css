@@ -4,7 +4,7 @@
 .project-section {
     padding-top: 1.6rem;
     height: calc(100vh-2rem);
-    width: calc(100vw-4rem);
+    width: calc(100vw - 4rem);
     transition: all 350ms ease;
     /* padding: ; */
   }
@@ -112,7 +112,7 @@
   #project2 img {
     width: 100%;
     height: calc(100vh - 8rem);
-    height: auto;
+    /* height: auto; */
   }
   #project3 {
     grid-column: 1/3;

@@ -5,13 +5,13 @@
 .certificate-list {
    display: flex;
   /* margin-top: 2rem; */
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .certificate-list .received-certificates{
     width: 50vw;
-    padding: 1rem;
-    background-color: rgb(14, 83, 83);
+    /* padding: 1rem; */
+    /* background-color: rgb(14, 83, 83);  */
 }
 
 .certificate-list .received-certificates img{

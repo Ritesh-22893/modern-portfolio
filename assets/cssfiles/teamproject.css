@@ -2,9 +2,11 @@
 /* Team Project section starts  */
 .team-project-section {
     margin-top: 3rem;
-    width: 97vw;
+    width: 100%;
+    width: calc(100vw - 4rem);
+
     height: calc(100vh-6rem);
-    padding-right: 3rem;
+    /* padding-right: 3rem; */
   
   }
   .team-project {
@@ -24,7 +26,7 @@
   
   
   .team-project img {
-    height:70vh;
+    height:max-content;
     width: 100%;
     border-radius: 1rem;
   }
