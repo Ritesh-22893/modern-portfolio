@@ -7,10 +7,10 @@
 .contact-section .contact-container {
   display: flex;
   /* justify-content: start; */
-  gap: 5vw;
+  gap: 4vw;
 }
 .contact-section .contact-container .left-section{
-  width: 40%;
+  width: 45%;
 }
 .contact-section .contact-container form {
   /* height: 60%; */
@@ -76,21 +76,25 @@ textarea,
 }
 
 .contact-container .middle-section {
+  margin-top: 2rem;
+  width: 35%;
+  /* height: 200rem; */
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.middle-section{
-  margin-top: 2rem;
-  width: 40%;
-}
+
 .middle-section .info-box {
   display: flex;
+  align-content: center;
+  justify-content: center;
   gap: 1rem;
   margin: 1rem 0rem;
   width: fit-content;
   padding: 1rem;
-  /* border: 1px solid black; */
   border: none;
+  /* border: 1px solid rgb(255, 253, 253); */
   border-radius: 1rem;
   background-color: rgb(9, 18, 75);
 }
@@ -102,8 +106,10 @@ textarea,
   background-color: rgb(167, 163, 163);
   background-color: rgb(18, 19, 97);
 }
+
 .middle-section .letsBuild {
   color: rgb(192, 184, 184);
+  
 }
 
 .right-section{

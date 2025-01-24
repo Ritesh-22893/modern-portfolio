@@ -19,7 +19,9 @@ h2 {
   width: auto;
   /* background-color: rgb(30, 39, 95) !important; */
   background-color: rgb(28, 39, 112) !important;
-
+}
+html{
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -29,11 +31,17 @@ h2 {
   --text-color: white;
   --sec-text-color: rgb(241, 236, 236);
 }
+::-webkit-scrollbar{
+  background: rgb(33, 40, 187);
+  width: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(33, 40, 187);
+}
 
 body {
   background-color: rgb(3, 6, 46);
   color: white;
-  scroll-behavior: smooth;
 }
 
 span {
