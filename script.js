@@ -8,6 +8,48 @@ var typed = new Typed('#element', {
   showCursor: true
 });
 
+ 
+// for creating quotes with fading effect
+
+document.addEventListener("DOMContentLoaded", () => {
+  const quotes = [
+    "Bringing ideas to life, one component at a time",
+    "I code to create, to innovate, and to inspire",
+    "Every line of code is a step closer to innovation",
+    "A developer with a minimalist approach but maximal goals",
+    "Building elegant web experiences",
+    "Not just writing code, but building dreams",
+    "In the world of tech, simplicity and speed are my allies"
+  ];
+
+  const quoteContainer = document.querySelector(".quote");
+  let currentIndex = 0;
+
+  function showQuote() {
+    // Set the text of the current quote
+    quoteContainer.textContent = quotes[currentIndex];
+
+    // Add the 'show' class to fade in
+    quoteContainer.classList.add("show");
+
+    // Remove the 'show' class to fade out after a delay
+    setTimeout(() => {
+      quoteContainer.classList.remove("show");
+    }, 4000); // Display the quote for 5 seconds (adjust as needed)
+
+    // Move to the next quote
+    currentIndex = (currentIndex + 1) % quotes.length;
+
+    // Call the function again after the fade-out duration
+    setTimeout(showQuote, 5000); // Delay for fade-out and next quote
+  }
+
+  // Start showing quotes
+  showQuote();
+});
+
+// 
+
 // to show selected item in navbar items
 
 let activeMenu = document.querySelectorAll(".navbar-items a i");

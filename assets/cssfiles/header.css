@@ -34,6 +34,17 @@
     /* font-weight: 500; */
   }
   
+.quote {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  color: #00ffcc; /* Adjust color as needed */
+  font-weight: bold;
+}
+
+.quote.show {
+  opacity: 1;
+}
+  
   .navbar .logo img {
     display: flex;
     align-items: center;

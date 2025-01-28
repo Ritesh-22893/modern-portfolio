@@ -60,24 +60,25 @@
 
     <!-- css of footer -->
     <link rel="stylesheet" href="/assets/cssfiles/footer.css">
-
+ 
 
 
     <!-- css of responsive -->
     <link rel="stylesheet" href="/assets/cssfiles/responsive.css">
 
+    <!-- cdn for animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   </head>
 
   <body>
     <header>
       <nav class="navbar">
-        <div class="logo">
+        <div class="logo" data-aos="fade-in" data-aos-delay="900">
           <img src="./assets/profileImages/_RiteshLogo.png" alt="LOGO" />
         </div>
-        <div class="factAboutMe">
-          <!-- <strong>Fact About Me</strong> -->
-          <h3>
+        <div class="factAboutMe" data-aos="fade-in" data-aos-delay="900">
+          <h3 class="quote">
             "Hardworking fellow looking for opportunity to shine and rise"
           </h3>
         </div>
@@ -101,7 +102,7 @@
 
     <main>
       <!-- introduction section begins -->
-      <section class="first-section" id="#">
+      <section class="first-section" id="#" data-aos="fade-down" data-aos-delay="900">
         <div class="introduction-section">
           <h1>Hi 👋</h1>
           <h2>
@@ -110,7 +111,7 @@
             ></span>
           </h2>
 
-          <p>
+          <p >
             Currnetly studying Bsc. CSIT at Butwal Mutiple Campus with a knack
             for crafting beautiful, functional websites and user interfaces. I
             specialize in
@@ -126,7 +127,7 @@
           </div>
         </div>
 
-        <div class="image-section">
+        <div class="image-section" data-aos="fade-down" data-aos-delay="900">
           <!-- <img src="./assets/banbatika.jpg" alt="" /> -->
           <!-- <img src="./assets/banbatika-removebg-preview.png" alt="" /> -->
 
@@ -138,11 +139,11 @@
 
 
       <!-- Projects Section Begins  -->
-      <section id="project" class="project-section">
+      <section id="project" class="project-section" data-aos="fade-up" data-aos-delay="900">
         <h1>My <span>Projects</span></h1>
 
-        <div class="projects">
-          <div id="project1" class="project">
+        <div class="project-container" >
+          <div id="project1" class="project" data-aos="fade-left" data-aos-delay="900">
             <h2>Todolist - The List Tracker</h2>
             <a href="https://todolist-ritesh.vercel.app/" target="_blank"
               ><img src="./assets/projectImages/todolistproject.png" alt="website image"
@@ -154,7 +155,7 @@
             </p>
             <button class="site-btn">Visit Website</button>
           </div>
-          <div id="project2" class="project">
+          <div id="project2" class="project" data-aos="fade-right" data-aos-delay="900">
             <h2>CODOLEARN - Learning Platform</h2>
             <a href="https://codolearn.vercel.app/" target="_blank"
               ><img src="./assets/projectImages/codolearnproject.png" alt="website image" />
@@ -168,7 +169,7 @@
             </p>
             <button class="site-btn">Visit Website</button>
           </div>
-          <div id="project3" class="project">
+          <div id="project3" class="project" data-aos="fade-left" data-aos-delay="900">
             <h2>Currency Converter</h2>
 
             <a href="https://currencyconverter-ritesh.vercel.app/" target="_blank"
@@ -183,7 +184,7 @@
             </p>
             <button class="site-btn">Visit Website</button>
           </div>
-          <div id="project4" class="project">
+          <div id="project4" class="project" data-aos="fade-right" data-aos-delay="900">
             <h2>AutoRikshaw UI Design</h2>
             <a href="" target="_blank"
               ><img
@@ -202,7 +203,7 @@
       <!-- Projects Section Ends  -->
 
       <!-- Team Project section starts -->
-      <section class="team-project-section">
+      <section class="team-project-section" data-aos="fade-down" data-aos-delay="900">
         <h1>Team <span>Project</span></h1>
 
         <div id="team-project1" class="team-project">
@@ -223,11 +224,11 @@
       <!-- Team Project section ends -->
 
       <!-- Resume section starts -->
-      <section id="resume" class="resume-section">
+      <section id="resume" class="resume-section" data-aos="fade-up" data-aos-delay="900">
         <h1><span>Resume</span></h1>
 
         <div class="resume-container">
-          <div class="resume-left">
+          <div class="resume-left" >
             <h2>Why <span>hire</span> me ?</h2>
             <p>
               I am self-learned, team-oriented, friendly developer with perfect
@@ -343,7 +344,7 @@
 
       <!-- graduation section starts -->
 
-      <div id="certificate" class="certificate-section" >
+      <div id="certificate" class="certificate-section" data-aos="fade-up" data-aos-delay="900">
         <h1><span>Certificates</span></h1>
         <!-- <h2>Some certificates <span>received during my journey</span></h2> -->
         <div class="certificate-list">
@@ -360,7 +361,7 @@
 
 
       <!-- FAQs section starts -->
-      <section id="faqs" class="faq-section">
+      <section id="faqs" class="faq-section" data-aos="fade-up" data-aos-delay="900">
         <h1><span>FAQ</span></h1>
         <h2>
           Some of the <span>commonly asked</span> questions and their answers !
@@ -369,18 +370,18 @@
         <menu class="questions-answers">
         
           <div class="QandA" >
-            <h3 id="question1"  class="question">
+            <h3 id="question1"  class="question" data-aos="fade-left" data-aos-delay="900">
               <!-- <i class="fa-solid fa-angle-up"> -->
               <button class="down-arrow"><i class="fa-solid fa-angle-down"></i></i></button>
               Where did you  <span> learn web development </span>?</h3>
-          <p id="answer1" class="answer">
+          <p id="answer1" class="answer" data-aos="fade-in" data-aos-delay="900">
             I learn web development from <span>online resources,</span> mainly from <span>youtube, watching tutorials</span>
              and <span>reading documentaries</span> circulation in the web.
           </p>
         </div>
 
         <div class="QandA" >
-          <h3 id="question2"  class="question">
+          <h3 id="question2"  class="question" data-aos="fade-right" data-aos-delay="900">
             <!-- <i class="fa-solid fa-angle-up"> -->
             <button class="down-arrow"><i class="fa-solid fa-angle-down "></i></i></button>
             How <span>long</span> have you <span>been in  web development </span>?</h3>
@@ -391,7 +392,7 @@
 
 
         <div class="QandA" >
-          <h3 id="question3"  class="question">
+          <h3 id="question3"  class="question" data-aos="fade-left" data-aos-delay="900">
             <!-- <i class="fa-solid fa-angle-up"> -->
             <button class="down-arrow"><i class="fa-solid fa-angle-down"></i></i></button>
             Are you in both <span>frontend</span> and <span>backend</span> development ?</h3>
@@ -401,7 +402,7 @@
       </div>
 
       <div class="QandA" >
-        <h3 id="question4"  class="question">
+        <h3 id="question4"  class="question" data-aos="fade-right" data-aos-delay="900">
           <!-- <i class="fa-solid fa-angle-up"> -->
           <button class="down-arrow"><i class="fa-solid fa-angle-down "></i></i></button>
           How many <span>clients</span> have you <span>worked with </span> ?</h3>
@@ -412,7 +413,7 @@
 
 
     <div class="QandA" >
-      <h3 id="question5"  class="question">
+      <h3 id="question5"  class="question" data-aos="fade-left" data-aos-delay="900">
         <!-- <i class="fa-solid fa-angle-up"> -->
         <button class="down-arrow"><i class="fa-solid fa-angle-down "></i></i></button>
         What is <span>your inspiration</span> ?</h3>
@@ -423,7 +424,7 @@
 
 
   <div class="QandA" >
-    <h3 id="question6"  class="question">
+    <h3 id="question6"  class="question" data-aos="fade-right" data-aos-delay="900">
       <!-- <i class="fa-solid fa-angle-up"> -->
       <button class="down-arrow"><i class="fa-solid fa-angle-down "></i></i></button>
       What your <span>opinion on</span> evolving <span>Artificial Intelligence</span> ?</h3>
@@ -506,10 +507,10 @@
       <!-- Education section ends -->
 
       <!-- contact section starts -->
-      <section id="contact" class="contact-section">
+      <section id="contact" class="contact-section" >
         <h1><span>Contact</span> Me</h1>
         <div class="contact-container">
-          <div class="left-section">
+          <div class="left-section" data-aos="flip-right" data-aos-delay="900">
 
           <form target="_blank" action="https://formsubmit.co/riteshpokhrel73@gmail.com" method="POST">
             <h2>Send a Message</h2>
@@ -520,7 +521,7 @@
           </form>
         </div>
   
-    <div class="middle-section">
+    <div class="middle-section" data-aos="zoom-in" data-aos-delay="900">
     <h2>Lets <span>Chat !</span></h2>
     <h3 class="letsBuild">Lets build something together</h3>
     
@@ -532,7 +533,7 @@
     </div>
     </div>
   
-    <div id="call" class="info-box">
+    <div id="call" class="info-box" >
       <i class="fa-solid fa-phone"></i>
       <div>
         <h4>Call me on</h4>
@@ -549,7 +550,7 @@
     </div>
    </div>
    <div class="right-section">
-    <div class="links-section">
+    <div class="links-section" data-aos="zoom-in" data-aos-delay="900">
       <a href="https://github.com/Ritesh-22893/"  target="_blank"><i class="fa-brands fa-github"></i></a>
       <a href="#"><i class="fa-brands fa-linkedin"></i></a>
       <a href="#"><i class="fa-brands fa-figma"></i></a>
@@ -564,7 +565,7 @@
     </main>
 
     
-    <footer class="footer-section">
+    <footer class="footer-section" data-aos="fade-up" data-aos-delay="900">
 <!--       
       <div class="logo">
         <img src="./assets/profileImages/_RiteshLogo.png" alt="LOGO" />
@@ -599,8 +600,16 @@
 
   </footer>
 
+  <!-- for auto typing animation -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    
+
+    <!-- for animate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({duration:2000,offset :80});
+    </script>
+
+    <!-- linking javascript file -->
     <script src="script.js"></script>
   </body>
 </html>
