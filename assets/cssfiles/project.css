@@ -70,10 +70,12 @@
     /* border: 1px solid #ccc;  */
     border-radius: 1rem;
     padding: 1rem 1.6rem;
+
   }
   .project-container .project:hover {
     scale: 102%;
-    box-shadow: 20px 40px solid green;
+  /* transition: all 50ms ease; */
+
   }
   .project img {
     border-radius: 3rem;

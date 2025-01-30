@@ -4,6 +4,7 @@
     width: 100vw;
     display: flex;
     align-items: center;
+    /* justify-content: center; */
     padding: 40px 40px;
   
     /* background-color: rgb(17, 24, 116); */
@@ -16,8 +17,7 @@
     /* background-color: rgb(32, 25, 133); */
   
     height: 1rem;
-    /* justify-content: space-between; */
-    gap: 10rem;
+    gap: 10vw;
     z-index: 100;
     position: fixed;
   }
@@ -35,6 +35,8 @@
   }
   
 .quote {
+display: flex;
+align-items: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
   color: #00ffcc; /* Adjust color as needed */
