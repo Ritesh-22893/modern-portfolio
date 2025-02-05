@@ -23,7 +23,9 @@ h2 {
 html{
   scroll-behavior: smooth;
 }
-
+a{
+  text-decoration: none;
+}
 :root {
   --navbar-bg: rgb(17, 24, 116);
   --active-bg: rgb(33, 40, 187);

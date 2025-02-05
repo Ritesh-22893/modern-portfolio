@@ -18,3 +18,15 @@
     height: 25rem;
     width: 100%;
 }
+
+@media (max-width:420px){
+    .certificate-section .certificate-list {
+    display: flex;
+    flex-direction: column;
+}
+    .certificate-section .received-certificates img{
+        height: 300px;
+        width: 250px;
+        
+    }
+}

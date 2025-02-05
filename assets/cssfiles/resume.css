@@ -32,7 +32,7 @@
   background-color: rgb(95, 110, 202);
   background-color: rgb(62, 68, 110);
   /* background-color: rgba(75, 97, 36, 0); */
-
+  /* width: 10rem; */
   font-size: 1.1rem;
   color: rgb(207, 193, 193);
   color: white;
@@ -114,4 +114,27 @@
 .aboutme-section .properties {
   font-size: 1.1rem;
   margin-top: 1.6rem;
+}
+
+
+@media (max-width:420px){
+  .resume-section .resume-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .resume-section .resume-container  .resume-left{
+    width: 100vw;
+  }
+  .resume-container .resume-left p{
+    display: none;
+  }
+
+  .resume-left .btn {
+    width: 8rem;
+    font-size: 0.8rem;
+  }
+  .resume-section .resume-container {
+    padding-left: -2rem;
+  }
 }

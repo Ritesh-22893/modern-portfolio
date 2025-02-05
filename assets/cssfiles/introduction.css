@@ -80,7 +80,10 @@
     border-radius: 50px;
     font-weight: 600;
   }
-  
+  .introduction-section .action-buttons #resume-btn a {
+    text-decoration: none;
+    /* color: white; */
+    }
   
   .introduction-section .action-buttons #info-btn a {
   text-decoration: none;

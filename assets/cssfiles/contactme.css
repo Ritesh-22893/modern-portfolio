@@ -29,7 +29,6 @@
   background-color: #0d183d;
   background-color: #132357; */
   background-color: rgb(16, 24, 75);
-
   padding: 1rem 2rem 2rem;
 }
 .contact-container form h2 {
@@ -135,3 +134,34 @@ textarea,
   font-size: 2rem;
   padding: 0.4rem;
 }
+
+@media (max-width:420px){
+ .contact-container{
+  margin-left: -1rem;
+  display: flex ;
+ /* gap: 4rem; */
+}
+.contact-section .contact-container .left-section{
+  width: 90%;
+  /* width: 100vw; */
+}
+.contact-container .left-section form h2{
+  font-size: 1.4rem;
+ }
+ .contact-container .left-section form {
+  padding: 0.8rem 0.8rem;
+ }
+
+
+  .right-section .links-section a i {
+  /* display: none; */
+  font-size: 1.5rem;
+  padding: 0.4rem;
+}
+  
+
+.contact-section .middle-section{
+  display: none;
+}
+
+} 
