@@ -2,88 +2,150 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", serif;
+  font-family: "Poppins", sans-serif;
   list-style: none;
   transition: all 350ms ease;
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
 }
+
 h1 {
   font-size: 3rem;
 }
+
 h2 {
   font-size: 2rem;
 }
+
 .primary-btn {
   height: auto;
   width: auto;
-  /* background-color: rgb(30, 39, 95) !important; */
-  background-color: rgb(28, 39, 112) !important;
+  background-color: var(--button-bg) !important;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
-a{
+
+a {
   text-decoration: none;
 }
+
 :root {
+  /* Dark theme (default) */
   --navbar-bg: rgb(17, 24, 116);
   --active-bg: rgb(33, 40, 187);
   --span-bg: rgb(174, 177, 21);
   --text-color: white;
   --sec-text-color: rgb(241, 236, 236);
+  --bg-primary: rgb(3, 6, 46);
+  --bg-secondary: rgb(17, 24, 116);
+  --text-primary: white;
+  --text-secondary: rgb(241, 236, 236);
+  --card-bg: rgba(33, 40, 187, 0.1);
+  --border-color: rgba(255, 255, 255, 0.1);
+  --button-bg: rgb(33, 40, 187);
+  --button-hover: rgb(50, 60, 220);
 }
-::-webkit-scrollbar{
-  background: rgb(33, 40, 187);
-  width: 10px;
+
+/* Light theme with much better contrast */
+[data-theme="light"] {
+  --navbar-bg: #ffffff;
+  --active-bg: #2563eb;
+  --span-bg: #ea580c;
+  --text-color: #1f2937;
+  --sec-text-color: #4b5563;
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --text-primary: #111827;
+  --text-secondary: #374151;
+  --card-bg: #ffffff;
+  --border-color: #e5e7eb;
+  --button-bg: #2563eb;
+  --button-hover: #1d4ed8;
+  --shadow-light: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-medium: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --project-card-bg: #ffffff;
+  --faq-bg: #f9fafb;
 }
-::-webkit-scrollbar-thumb{
-  background: rgb(33, 40, 187);
+
+/* Light theme specific improvements */
+[data-theme="light"] .navbar {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+}
+
+[data-theme="light"] ::-webkit-scrollbar {
+  background: #f1f5f9;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Alternative: Style scrollbars instead of hiding */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-primary);
+  border-radius: 4px;
 }
 
 body {
-  background-color: rgb(3, 6, 46);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme toggle button styles */
+.theme-toggle {
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  background-color: var(--active-bg);
+  border-color: var(--active-bg);
   color: white;
+}
+
+.theme-toggle i {
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover i {
+  transform: rotate(180deg);
 }
 
 span {
   color: var(--span-bg);
-
   font-weight: bold;
 }
+
 main {
-  /* padding: 0 4rem; */
   padding: 0vh 3vw;
 }
-
-/* 
-.navbar ul {
-    display: flex;
-    gap: 2rem;
-}
-
-.navbar li {
-    list-style-type: none;
-}
-
-.navbar li:hover {
-    scale: 1.2;
-}
-
-.navbar li a {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-
-} */
-
-/* contact section starts */
-
-/* contact section ends */
-
-
-/* footer section starts */
-
-

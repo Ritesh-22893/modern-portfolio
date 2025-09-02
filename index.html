@@ -1,619 +1,796 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ritesh - FrontEnd Developer</title>
+    <title>Ritesh - Frontend Developer</title>
 
-    <!-- poppins font  -->
+    <!-- Poppins font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
 
-    <!--cdn of font awesome icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- CDN of Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- cdn of iconscout icons -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
-    />
+    <!-- CDN of Iconscout icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
 
-    <!-- css of overall website -->
+    <!-- CSS of overall website -->
     <link rel="stylesheet" href="style.css" />
 
- <!-- css of header section -->
- <link rel="stylesheet" href="/assets/cssfiles/header.css">
+    <!-- CSS of loader -->
+    <link rel="stylesheet" href="./assets/cssfiles/loader.css" />
 
-  <!-- css of floating navbar -->
-  <link rel="stylesheet" href="/assets/cssfiles/floatingnavbar.css">
+    <!-- CSS of header section -->
+    <link rel="stylesheet" href="./assets/cssfiles/header.css" />
 
+    <!-- CSS of floating navbar -->
+    <link rel="stylesheet" href="./assets/cssfiles/floatingnavbar.css" />
 
-     <!-- css of introduction section -->
-     <link rel="stylesheet" href="/assets/cssfiles/introduction.css">
+    <!-- CSS of introduction section -->
+    <link rel="stylesheet" href="./assets/cssfiles/introduction.css" />
 
-      <!-- css of project section -->
-    <link rel="stylesheet" href="/assets/cssfiles/project.css">
+    <!-- CSS of project section -->
+    <link rel="stylesheet" href="./assets/cssfiles/project.css" />
 
-     <!-- css of team project section -->
-     <link rel="stylesheet" href="/assets/cssfiles/teamproject.css">
+    <!-- CSS of team project section -->
+    <link rel="stylesheet" href="./assets/cssfiles/teamproject.css" />
 
-    <!-- css of resume section  -->
-    <link rel="stylesheet" href="/assets/cssfiles/resume.css" />
+    <!-- CSS of resume section -->
+    <link rel="stylesheet" href="./assets/cssfiles/resume.css" />
 
-    <!-- css of certificates section -->
-    <link rel="stylesheet" href="/assets/cssfiles/certificate.css" />
+    <!-- CSS of certificates section -->
+    <link rel="stylesheet" href="./assets/cssfiles/certificate.css" />
 
+    <!-- CSS of FAQ -->
+    <link rel="stylesheet" href="./assets/cssfiles/faq.css" />
 
-    <!-- css of faq -->
-    <link rel="stylesheet" href="/assets/cssfiles/faq.css">
+    <!-- CSS of contact me -->
+    <link rel="stylesheet" href="./assets/cssfiles/contactme.css" />
 
-    <!-- css of contactme -->
-    <link rel="stylesheet" href="/assets/cssfiles/contactme.css">
+    <!-- CSS of footer -->
+    <link rel="stylesheet" href="./assets/cssfiles/footer.css" />
 
-    <!-- css of footer -->
-    <link rel="stylesheet" href="/assets/cssfiles/footer.css">
- 
+    <!-- CSS of responsive -->
+    <link rel="stylesheet" href="./assets/cssfiles/responsive.css" />
 
+    <!-- CDN for animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
 
-    <!-- css of responsive -->
-    <link rel="stylesheet" href="/assets/cssfiles/responsive.css">
+<body>
 
-    <!-- cdn for animate on scroll -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  </head>
-
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo" data-aos="fade-in" data-aos-delay="900">
-          <img src="./assets/profileImages/_RiteshLogo.png" alt="LOGO" />
+    <!-- Loader -->
+    <div class="loader-container" id="loader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-logo">R</div>
         </div>
-        <div class="factAboutMe" data-aos="fade-in" data-aos-delay="900">
-          <h3 class="quote">
-            "Hardworking fellow looking for opportunity to shine and rise"
-          </h3>
+        <div class="loader-text">Loading Portfolio...</div>
+        <div class="loader-progress">
+            <div class="loader-progress-bar"></div>
         </div>
-
-        <div class="navbar-items">
-          <!-- <li><a href="#home">Home</a></li> -->
-          <a href="#"><i class="fa-solid fa-house active"></i></a>
-          <!-- <li><a href="#projects">Projects</a></li> -->
-          <a href="#project"><i class="fa-solid fa-list-check"></i></a>
-          <!-- <li><a href="#education">Education</a></li> -->
-          <a href="#resume"><i class="fa-solid fa-user"></i></a>
-          <!-- <li><a href="#services">Services</a></li> -->
-          <a href="#certificate"><i class="fa-solid fa-star"></i></a>
-          <!-- <li><a href="#services">Services</a></li> -->
-          <a href="#faqs"><i class="fa-solid fa-question"></i></a>
-          <!-- <li><a href="#contact">Contact</a></li> -->
-          <a href="#contact"><i class="fa-solid fa-phone"></i></a>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <!-- introduction section begins -->
-      <section class="first-section" id="#" data-aos="fade-down" data-aos-delay="900">
-        <div class="introduction-section">
-          <h1>Hi 👋</h1>
-          <h2>
-            I'm <span>Ritesh Pokhrel</span> a passionate <br /><span
-              id="element"
-            ></span>
-          </h2>
-
-          <p >
-            Currnetly studying Bsc. CSIT at Butwal Mutiple Campus with a knack
-            for crafting beautiful, functional websites and user interfaces. I
-            specialize in
-            <strong>HTML</strong>, <strong>CSS</strong>,
-            <strong>JavaScript</strong>, and <strong>React</strong>, creating
-            seamless user experiences that bring ideas to life.
-          </p>
-          <p><strong>Let's build something amazing together!</strong></p>
-          <div class="action-buttons">
-            <button id="info-btn"><a href="#contact">Contact Me</a></button>
-            <button id="resume-btn"><a href="https://drive.google.com/file/d/1T-gtVxFCeovUkAhq0TjANmff_un1UIse/view?usp=sharing" onclick="window.open(this.href,'_blank');return false;">Get Resume<i class="fa-solid fa-download"></i></a></button>
-
-          </div>
-        </div>
-
-        <div class="image-section" data-aos="fade-down" data-aos-delay="900">
-          <!-- <img src="./assets/banbatika.jpg" alt="" /> -->
-          <!-- <img src="./assets/banbatika-removebg-preview.png" alt="" /> -->
-
-          <img src="./assets/profileImages/ritesh_coverImage.png" alt="profile image" />
-          <!-- <img src="./assets/EDV-Photo.jpg" alt="" /> -->
-        </div>
-      </section>
-      <!-- introduction section ends -->
+        <div class="loader-quote">Crafting digital experiences with passion</div>
+    </div>
+    <!-- Loader -->
 
 
-      <!-- Projects Section Begins  -->
-      <section id="project" class="project-section" data-aos="fade-up" data-aos-delay="900">
-        <h1>My <span>Projects</span></h1>
-
-        <div class="project-container" >
-          <div id="project1" class="project" data-aos="fade-left" data-aos-delay="900">
-            <h2>Todolist - The List Tracker</h2>
-          
-            <img src="./assets/projectImages/todolistproject.png" alt="website image"
-            />
-            <p>
-              A <span>Todolist</span> built using
-              <span>React, TailwindCSS</span> organize your todos and make your
-              day productive.
-            </p>
-            <a href="https://todolist-ritesh.vercel.app/" onclick="window.open(this.href,'_blank');return false;"
-            ><button class="site-btn">Visit Website</button></a>
-          </div>
-          <div id="project2" class="project" data-aos="fade-right" data-aos-delay="900">
-            <h2>CODOLEARN - Learning Platform</h2>
-           
-            <img src="./assets/projectImages/codolearnproject.png" alt="website image" />
-           
-
-            <p>
-              A <span>learning website</span> for passionate individuals to get
-              necesaary skills for becoming a well established programmer. It is
-              built using <span>React, TailwindCSS</span> to develop skills and
-              enhance them in today's world.
-            </p>
-            <a href="https://codolearn.vercel.app/" onclick="window.open(this.href,'_blank');return false;"
-              ><Visit class="site-btn">Visit Website</button></a>
-          </div>
-          <div id="project3" class="project" data-aos="fade-left" data-aos-delay="900">
-            <h2>Currency Converter</h2>
-
-           <img
-                src="./assets/projectImages/currencyconverterproject.png"
-                alt="website image"
-            />
-            <p>
-              A <span>currency converting</span> that provides exchange rate for
-              currencies of various countries , built using
-              <span>HTML, CSS, JavaScript</span>
-            </p>
-            <a href="https://currencyconverter-ritesh.vercel.app/" onclick="window.open(this.href,'_blank');return false;"
-              ><button class="site-btn"> Visit website</button></a>   
-          </div>
-          <div id="project4" class="project" data-aos="fade-right" data-aos-delay="900">
-            <h2>AutoRikshaw UI Design</h2>
-            <a href="" onclick="window.open(this.href,'_blank');return false;"
-              ><img
-                src="./assets/projectImages/AutoRikshaw-Website_Design.jpg"
-                alt=""
-            /></a>
-            <p>
-              A <span>AutoRikshaw Website</span> design for my upcoming project. It includes all the common facilites that one seek for travelling nearby. Built using
-              <span>FIGMA</span>
-            </p>
-            <button class="site-btn">Visit Website</button>
-          </div>
-        </div>
-      </section>
-      <!-- Projects Section Ends  -->
-
-      <!-- Team Project section starts -->
-      <section class="team-project-section" data-aos="fade-down" data-aos-delay="900">
-        <h1>Team <span>Project</span></h1>
-
-        <div id="team-project1" class="team-project">
-          <h2>FOOD2HUNGER - Eradicating Hunger</h2>
-          <a href="https://food2-hunger.vercel.app/"  
-            ><img src="./assets/projectImages/food2hunger.png" alt="website image"
-          /></a>
-          <p>
-            <span>FOOD2HUNGER </span>is a fullstack web app built using <span>Frontend tech </span> as 
-            <span>Vite, bootstrap, Typescript, TailwindCSS</span> 
-            and  <span>Backend tech </span>as
-            <span>Nodejs, Expressjs,  MongoDB. </span>  
-            It <span>helps</span> in <span>Eradicating hunger</span> improving quality of life and providing basic human needs like <Span>Right To Food</Span>
-          </p>
-          <button class="site-btn">Visit Website</button>
-        </div>
-      </section>
-      <!-- Team Project section ends -->
-
-      <!-- Resume section starts -->
-      <section id="resume" class="resume-section" data-aos="fade-up" data-aos-delay="900">
-        <h1><span>Resume</span></h1>
-
-        <div class="resume-container">
-          <div class="resume-left" >
-            <h2>Why <span>hire</span> me ?</h2>
-            <p>
-              I am self-learned, team-oriented, friendly developer with perfect
-              skillset that you are looking for.
-            </p>
-            <div class="buttons">
+    <!-- Modern Navbar -->
+    <nav class="navbar">
+        <!-- Logo Section (Left) -->
+        <div class="logo">
+            <div class="logo-icon">R</div>
+            <div class="brand-text">
+                <span class="brand-name">Ritesh</span>
+                <span class="brand-subtitle">Developer</span>
             </div>
-            <button class="btn primary-btn skills-btn">Skills</button>
-            <button class="btn education-btn">Education</button>
-            <button class="btn experience-btn">Experience</button>
-            <button class="btn aboutme-btn">About Me</button>
-          </div>
+        </div>
 
-          <div class="resume-right">
-            <!-- <div class="skills-section">
-              <h2><span>Frontend Skills</span></h2>
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-              <i class="fa-brands fa-js"></i>
-              <i class="fa-brands fa-react"></i>
-              </div>
-               <div class="backend-skills">
-              <h2><span>Backend Skills</span></h2>
-              <i class="fa-brands fa-node"></i>
-               </div>
-            </div> -->
+        <!-- Dynamic Quote Section (Center) -->
+        <div class="dynamic-text-section">
+            <div class="text-container">
+                <span class="quote">Bringing ideas to life, one component at a time</span>
+            </div>
+        </div>
 
-            <!-- <div class="education-section">
+        <!-- Theme Toggle (Right) -->
+        <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+    </nav>
 
-              <div id="secondary" class="education-level">
-                <h3><span>Secondary</span> Level</h3>
-                <h4>( 2019 - 2021 )</h4>
-                <p>
-                  Completed <span>SEE</span> with <span>4.00 GPA</span> from
-                  <span> Shankarnagar Durgadutta School </span>
-                  located at Rupandehi, Tilottama - 1
-                </p>
-              </div>
-              <div id="highersecondary" class="education-level">
-                <h3><span>Higher</span> Secondary Level</h3>
-                <h4>( 2021 - 2023 )</h4>
-                <p>
-                  Completed <span>+2</span> with <span>3.36 GPA</span> from
-                  <span> Tilottama Campus </span>
-                  located at Rupandehi, Tilottama - 5
-                </p>
-              </div>
-              <div id="bachelor" class="education-level">
-                <h3><span>Bachelor</span> Level</h3>
-                <h4>( 2023 - Present )</h4>
-                <p>
-                  Studying <span>Bsc. CSIT</span><span></span> from
-                  <span> Butwal Multiple Campus </span>
-                  located at Rupandehi, Butwal - Golpark
-                </p>
-              </div>
-            </div> -->
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+        <ul>
+            <li>
+                <a href="#home" data-tooltip="Home"><i class="fas fa-home"></i></a>
+            </li>
+            <li>
+                <a href="#project" data-tooltip="Projects"><i class="fas fa-folder"></i></a>
+            </li>
+            <li>
+                <a href="#about" data-tooltip="About"><i class="fas fa-user"></i></a>
+            </li>
+            <a href="#faqs" data-tooltip="FAQs"><i class="fa-solid fa-question"></i></a>
+            <li>
+                <a href="#contact" data-tooltip="Contact"><i class="fas fa-envelope"></i></a>
+            </li>
+        </ul>
+    </nav>
 
-            <!-- experience section starts -->
+    <main><!-- Professional Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <!-- Left Content -->
+                    <div class="hero-text">
+                        <div class="intro-text">
+                            <p class="greeting">Hello there! 👋</p>
+                            <h1 class="hero-title">I'm <span class="name-highlight">Ritesh Pokhrel</span></h1>
+                            <div class="role-wrapper">
+                                <span class="role-text">a passionate</span>
+                                <span class="dynamic-role" id="element"></span>
+                            </div>
+                        </div>
 
-            <!-- <div class="experience-section">
-              <div id="gracathon" class="experience-level">
-                <h3><span>Gracathon</span> Event</h3>
-                <img
-                  src="./assets/certificates/gracathon.jpg"
-                  alt="gracathon_certificate"
-                />
-                <p>
-                  Participated in gracathon representing
-                  <span>FOOD2HUNGER</span>
-                  along with team members diving deep in the field of web
-                  development.
-                </p>
-              </div>
-            </div> -->
+                        <p class="hero-description">
+                            I craft digital experiences that blend creativity with functionality.
+                            Currently pursuing BSc. CSIT while building modern web applications
+                            with clean, efficient code and user-centered design principles.
+                        </p>
 
-            <!-- aboutme section starts -->
-            <div class="aboutme-section">
-              <h2><span>About</span> Me</h2>
-              <p class="heading">
-                Born and live at <span>Butwal</span>, with keen interest in
-                becoming a self-sustain, self-established personna.
-              </p>
-              <div class="aboutme-info">
-                <div class="left">
-                  <h4 class="properties"><span>Name</span> : Ritesh Pokhrel</h4>
-                  <h4 class="properties">
-                    <span>Experience</span> : 2+ yesars
-                  </h4>
-                  <h4 class="properties">
-                    <span>language</span> : English, Nepali
-                  </h4>
-                  <h4 class="properties"><span>Nationality</span> : Nepal</h4>
+                        <div class="skills-preview">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+
+                        <div class="hero-actions">
+                            <a href="#contact" class="btn btn-primary">
+                                <span class="btn-text">Let's Connect</span>
+                                <div class="btn-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" />
+                                    </svg>
+                                </div>
+                            </a>
+                            <a href="https://drive.google.com/file/d/1T-gtVxFCeovUkAhq0TjANmff_un1UIse/view?usp=sharing"
+                                target="_blank" class="btn btn-outline">
+                                <div class="btn-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"
+                                            stroke="currentColor" stroke-width="2" />
+                                    </svg>
+                                </div>
+                                <span class="btn-text">Download CV</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Visual -->
+                    <div class="hero-visual">
+
+                        <div class="image-container">
+                            <div class="image-frame">
+                                <img src="./assets/profileImages/myProfile.png"
+                                    alt="Ritesh Pokhrel - Full Stack Developer" />
+                            </div>
+                            <div class="floating-elements">
+                                <div class="float-element float-1">⚛️</div>
+                                <div class="float-element float-2">🚀</div>
+                                <div class="float-element float-3">💻</div>
+                            </div>
+                        </div>
+
+                        <div class="status-badge">
+                            <div class="status-dot"></div>
+                            <span>Available for work</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="right">
-                  <h4 class="properties">
-                    <span>Email</span> : riteshpokhrel73@gmail.com
-                  </h4>
-                  <h4 class="properties">
-                    <span>Phone</span> : +977 9815461099, 9767611249
-                  </h4>
-                  <h4 class="properties">
-                    <span>Linkdin</span> : Ritesh Pokhrel
-                  </h4>
-                  <h4 class="properties">
-                    <span>Hobbies</span> : Exploring AI, Self-studying, Chess
-                  </h4>
+            </div>
+        </section>
+
+        <!-- Projects Section Begins -->
+        <section id="project" class="project-section" data-aos="fade-up" data-aos-delay="900">
+            <h1>Featured Projects</h1>
+
+            <div class="project-container">
+                <div id="project1" class="project">
+                    <h2>Todolist App</h2>
+                    <div class="project-image-wrapper">
+                        <img src="./assets/projectImages/todolistproject.png" alt="Todolist application" />
+                    </div>
+                    <p>
+                        A comprehensive task management application built
+                        with React and TailwindCSS, featuring real-time
+                        updates and intuitive user interface.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TailwindCSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://todolist-jade-mu.vercel.app/" class="site-btn"
+                            onclick="window.open(this.href,'_blank');return false;">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                    </div>
                 </div>
-              </div>
+
+                <div id="project2" class="project">
+                    <h2>CODOLEARN Platform</h2>
+                    <div class="project-image-wrapper">
+                        <img src="./assets/projectImages/codolearnproject.png" alt="CODOLEARN learning platform" />
+                    </div>
+                    <p>
+                        An interactive learning management system designed
+                        to provide seamless educational experiences with
+                        modern web technologies.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://codolearn.vercel.app/" class="site-btn"
+                            onclick="window.open(this.href,'_blank');return false;">
+                            <i class="fas fa-external-link-alt"></i>
+                            Visit Site
+                        </a>
+                    </div>
+                </div>
+
+                <div id="project3" class="project">
+                    <h2>Currency Converter</h2>
+                    <div class="project-image-wrapper">
+                        <img src="./assets/projectImages/currencyconverterproject.png" alt="Currency Converter" />
+                    </div>
+                    <p>
+                        Real-time currency conversion tool with live
+                        exchange rates and clean, user-friendly interface.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">API</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="site-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </a>
+                    </div>
+                </div>
+
+                <div id="project4" class="project">
+                    <h2>AutoRikshaw UI</h2>
+                    <div class="project-image-wrapper">
+                        <img src="./assets/projectImages/AutoRikshaw-Website_Design.jpg" alt="AutoRikshaw UI Design" />
+                    </div>
+                    <p>
+                        Modern UI/UX design for auto-rickshaw booking
+                        platform with intuitive navigation and smooth user
+                        experience.
+                    </p>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">UI/UX</span>
+                        <span class="tech-tag">Design</span>
+                        <span class="tech-tag">Mobile</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="site-btn">
+                            <i class="fas fa-eye"></i>
+                            View Design
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
+        </section>
+        <!-- Projects Section Ends -->
+
+        <!-- Team Project section starts -->
+        <section class="team-project-section" data-aos="fade-down" data-aos-delay="900">
+            <h1>Team <span>Project</span></h1>
+
+            <div class="team-project-container">
+                <div class="team-project">
+                    <div class="team-project-content">
+                        <h2>FOOD2HUNGER - Eradicating Hunger</h2>
+
+                        <p>
+                            <span>FOOD2HUNGER</span> is a fullstack web app built
+                            using Frontend tech as
+                            <span>Vite, Bootstrap, TypeScript, TailwindCSS</span>
+                            and Backend tech as
+                            <span>Node.js, Express.js, MongoDB.</span>
+                            It helps in <span>eradicating hunger</span> improving
+                            quality of life and providing basic human needs like
+                            <span>Right To Food</span>
+                        </p>
+
+                        <div class="tech-stack">
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">TailwindCSS</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+
+                        <div class="team-project-actions">
+                            <a href="https://food2-hunger.vercel.app/" class="site-btn"
+                                onclick="window.open(this.href,'_blank');return false;">
+                                <i class="fas fa-external-link-alt"></i>
+                                Visit Website
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-image-container">
+                        <a href="https://food2-hunger.vercel.app/"
+                            onclick="window.open(this.href,'_blank');return false;">
+                            <img src="./assets/projectImages/food2hunger.png" alt="FOOD2HUNGER website" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team Project section ends -->
+
+        <!-- Resume section starts -->
+        <section id="about" class="resume-section" data-aos="fade-up" data-aos-delay="900">
+            <h1><span>Resume</span></h1>
+
+            <div class="resume-container">
+                <div class="resume-left">
+                    <h2>Why <span>hire</span> me?</h2>
+                    <p>
+                        I am self-taught, team-oriented, friendly developer
+                        with perfect skillset that you are looking for.
+                    </p>
+                    <div class="buttons">
+                        <button class="btn primary-btn skills-btn" data-section="skills">
+                            Skills
+                        </button>
+                        <button class="btn education-btn" data-section="education">
+                            Education
+                        </button>
+                        <button class="btn experience-btn" data-section="experience">
+                            Experience
+                        </button>
+                        <button class="btn aboutme-btn" data-section="aboutme">
+                            About Me
+                        </button>
+                    </div>
+                </div>
+
+                <div class="resume-right">
+                    <!-- Skills Section -->
+                    <div class="skills-section active" data-content="skills">
+                        <h2><span>Skills</span> & Technologies</h2>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Section -->
+                    <div class="education-section" data-content="education">
+                        <h2><span>Education</span></h2>
+                        <div class="education-level">
+                            <h4>
+                                Bachelor of Science in Computer Science and
+                                Information Technology (BSc. CSIT)
+                            </h4>
+                            <p>
+                                <strong>Butwal Multiple Campus</strong> -
+                                Currently Pursuing<br />
+                                Focused on web development, programming
+                                fundamentals, and software engineering
+                                principles.
+                            </p>
+                        </div>
+                        <div class="education-level">
+                            <h4>Higher Secondary Education (+2)</h4>
+                            <p>
+                                <strong>Science Faculty</strong> -
+                                Completed<br />
+                                Strong foundation in Mathematics, Physics,
+                                and Computer Science.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Experience Section -->
+                    <div class="experience-section" data-content="experience">
+                        <h2><span>Experience</span></h2>
+                        <div class="experience-item">
+                            <h3>2+ Years of Self-Learning Journey</h3>
+                            <img src="./assets/certificates/gracathon.jpg" alt="Development Experience" />
+                            <p>
+                                Continuously learning and building projects
+                                using modern web technologies. Created
+                                multiple full-stack applications and
+                                responsive websites. Collaborated with teams
+                                on various projects including FOOD2HUNGER
+                                initiative.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- About Me Section -->
+                    <div class="aboutme-section" data-content="aboutme">
+                        <h2><span>About</span> Me</h2>
+                        <p class="heading">
+                            Born and live at <span>Butwal</span>, with keen
+                            interest in becoming a self-sustaining,
+                            self-established persona.
+                        </p>
+                        <div class="aboutme-info">
+                            <div class="left">
+                                <h4 class="properties">
+                                    <span>Name</span>: Ritesh Pokhrel
+                                </h4>
+                                <h4 class="properties">
+                                    <span>Experience</span>: 2+ years
+                                </h4>
+                                <h4 class="properties">
+                                    <span>Language</span>: English, Nepali
+                                </h4>
+                                <h4 class="properties">
+                                    <span>Nationality</span>: Nepal
+                                </h4>
+                            </div>
+                            <div class="right">
+                                <h4 class="properties">
+                                    <span>Email</span>:
+                                    riteshpokhrel73@gmail.com
+                                </h4>
+                                <h4 class="properties">
+                                    <span>Phone</span>: +977 9815461099,
+                                    9767611249
+                                </h4>
+                                <h4 class="properties">
+                                    <span>LinkedIn</span>: Ritesh Pokhrel
+                                </h4>
+                                <h4 class="properties">
+                                    <span>Hobbies</span>: Exploring AI,
+                                    Self-studying, Chess
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Resume section ends -->
+
+        <!-- Certificate section starts -->
+        <div id="certificate" class="certificate-section" data-aos="fade-up" data-aos-delay="900">
+            <h1><span>Certificates</span></h1>
+            <div class="certificate-list">
+                <div class="received-certificates">
+                    <img src="./assets/certificates/IT_certificates_02_new.jpg" alt="IT Certificate" />
+                </div>
+                <div class="received-certificates">
+                    <img src="./assets/certificates/IT_certificates_02_new.jpg" alt="IT Certificate" />
+                </div>
+            </div>
         </div>
-      </section>
-
-      <!-- Resume section ends -->
-
-      <!-- graduation section starts -->
-
-      <div id="certificate" class="certificate-section" data-aos="fade-up" data-aos-delay="900">
-        <h1><span>Certificates</span></h1>
-        <!-- <h2>Some certificates <span>received during my journey</span></h2> -->
-        <div class="certificate-list">
-          <div class="received-certificates">
-            <img src="./assets/certificates/IT_certificates_02_new.jpg" alt="">
-          </div>
-          <div class="received-certificates">
-            <img src="./assets/certificates/IT_certificates_02_new.jpg" alt="">
-          </div>
-        </div>
-
-      </div>
-      <!-- graduation section ends -->
-
-
-      <!-- FAQs section starts -->
-      <section id="faqs" class="faq-section" data-aos="fade-up" data-aos-delay="900">
-        <h1><span>FAQ</span></h1>
-        <h2>
-          Some of the <span>commonly asked</span> questions and their answers !
-        </h2>
-
-        <menu class="questions-answers">
-        
-          <div class="QandA" >
-            <h3 id="question1"  class="question" data-aos="fade-left" data-aos-delay="900">
-              <!-- <i class="fa-solid fa-angle-up"> -->
-              <button class="down-arrow"><i class="fa-solid fa-angle-down"></i></i></button>
-              Where did you  <span> learn web development </span>?</h3>
-          <p id="answer1" class="answer" data-aos="fade-in" data-aos-delay="900">
-            I learn web development from <span>online resources,</span> mainly from <span>youtube, watching tutorials</span>
-             and <span>reading documentaries</span> circulation in the web.
-          </p>
-        </div>
-
-        <div class="QandA" >
-          <h3 id="question2"  class="question" data-aos="fade-right" data-aos-delay="900">
-            <!-- <i class="fa-solid fa-angle-up"> -->
-            <button class="down-arrow"><i class="fa-solid fa-angle-down "></i></i></button>
-            How <span>long</span> have you <span>been in  web development </span>?</h3>
-        <p id="answer2" class="answer">
-          I have been enrolled in this field of web development from the <span>past 2 years with some amazing projects</span> learning in depth whether it is simple or a complex topic. I find it amusing as well as proud when completing a project that i have been working for a while. 
-        </p>
-      </div>
-
-
-        <div class="QandA" >
-          <h3 id="question3"  class="question" data-aos="fade-left" data-aos-delay="900">
-            <!-- <i class="fa-solid fa-angle-up"> -->
-            <button class="down-arrow"><i class="fa-solid fa-angle-down"></i></i></button>
-            Are you in both <span>frontend</span> and <span>backend</span> development ?</h3>
-        <p id="answer3" class="answer">
-          I am mostly concerned in frontend but i have done some projects as well as have good grip of backend web development too. I use technologies like nodejs, express and mongodb for backend projects. I can even built a fullstack web app. 
-        </p>
-      </div>
-
-      <div class="QandA" >
-        <h3 id="question4"  class="question" data-aos="fade-right" data-aos-delay="900">
-          <!-- <i class="fa-solid fa-angle-up"> -->
-          <button class="down-arrow"><i class="fa-solid fa-angle-down "></i></i></button>
-          How many <span>clients</span> have you <span>worked with </span> ?</h3>
-      <p id="answer4" class="answer">
-      Speaking the truth, i have <span>satisfied more than 4 clients</span> with my work as per their suggestion and request. I have <span>received quite good feedback</span> from my clients. 
-      </p>
-    </div> 
-
-
-    <div class="QandA" >
-      <h3 id="question5"  class="question" data-aos="fade-left" data-aos-delay="900">
-        <!-- <i class="fa-solid fa-angle-up"> -->
-        <button class="down-arrow"><i class="fa-solid fa-angle-down "></i></i></button>
-        What is <span>your inspiration</span> ?</h3>
-    <p id="answer5" class="answer">
-      Personally my inspiration is <span>Steve Jobs.</span> I am deeply <span>inspired</span> by his journey, his passion as well as his vision towards technology. He is surely my  <span>role model.</span>
-    </p>
-  </div> 
-
-
-  <div class="QandA" >
-    <h3 id="question6"  class="question" data-aos="fade-right" data-aos-delay="900">
-      <!-- <i class="fa-solid fa-angle-up"> -->
-      <button class="down-arrow"><i class="fa-solid fa-angle-down "></i></i></button>
-      What your <span>opinion on</span> evolving <span>Artificial Intelligence</span> ?</h3>
-  <p id="answer6" class="answer">
-    With remarkable advancement in AI, I am <span>little bit afraid</span> that it will took our jobs in the near future. But, why to bother when you can <span>enjoy the present as it is !</span> 
-  </p>
-</div> 
-
-
-        </menu>
-      </section>
-
-      <!-- FAQs section ends -->
-
-      <!-- Education section starts -->
-      <!-- <section id="education" class="education-section">
-        <h1><span>Education</span></h1>
-        <div class="title-education">
-        </div>
-        <div class="education-container">
-          <div class="date-in-years">
-            <h2 class="years-title">YEARS</h2>
-
-            <div id="first-year">
-              <div class="horizontal-line"></div>
-              <h2><span>2019</span> - <span>2021</span></h2>
+        <!-- Certificate section ends -->
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faqs">
+            <div class="faq-header">
+                <h1>Frequently Asked <span>Questions</span></h1>
+                <h2>Everything you need to know about working with me and my development services.</h2>
             </div>
-            <div id="second-year">
-              <div class="horizontal-line"></div>
-              <h2><span>2021</span> - <span>2023</span></h2>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="question-content">
+                            <div class="question-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="question-text">What <span class="highlight">programming languages</span> and
+                                frameworks do you use?</div>
+                        </div>
+                        <div class="toggle-btn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            I work primarily with JavaScript (ES6+), React.js, Next.js, Node.js, and Express.js for
+                            full-stack development. For styling, I use CSS3, Tailwind CSS, and Bootstrap. I'm also
+                            experienced with databases like MongoDB and version control with Git.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="question-content">
+                            <div class="question-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="question-text">What's your typical <span class="highlight">project
+                                    timeline</span>?</div>
+                        </div>
+                        <div class="toggle-btn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Simple landing pages take 1-2 weeks, portfolio websites 2-3 weeks, and complex web
+                            applications 1-3 months. Timeline depends on features, complexity, and revisions. I provide
+                            detailed project schedules during our initial consultation.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="question-content">
+                            <div class="question-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="question-text">Are your websites <span class="highlight">mobile-friendly</span>?
+                            </div>
+                        </div>
+                        <div class="toggle-btn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Absolutely! All my websites are built with a mobile-first approach and are fully responsive
+                            across all devices - smartphones, tablets, laptops, and desktops. I ensure optimal
+                            performance and user experience on every screen size.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="question-content">
+                            <div class="question-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="question-text">Can you help with <span class="highlight">website
+                                    deployment</span>?</div>
+                        </div>
+                        <div class="toggle-btn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Definitely! I handle the complete deployment process including domain setup, hosting
+                            configuration, SSL certificates, and performance optimization. I work with platforms like
+                            Vercel, Netlify, Heroku, and traditional hosting providers.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="third-year">
-              <div class="horizontal-line"></div>
-              <h2><span>2023</span> - <span>Present</span></h2>
+
+            <!-- FAQ Stats -->
+            <div class="faq-stats">
+                <div class="faq-stat">
+                    <div class="faq-stat-number">25+</div>
+                    <div class="faq-stat-label">Projects Completed</div>
+                </div>
+                <div class="faq-stat">
+                    <div class="faq-stat-number">100%</div>
+                    <div class="faq-stat-label">Client Satisfaction</div>
+                </div>
+                <div class="faq-stat">
+                    <div class="faq-stat-number">24/7</div>
+                    <div class="faq-stat-label">Support Available</div>
+                </div>
+                <div class="faq-stat">
+                    <div class="faq-stat-number">2+</div>
+                    <div class="faq-stat-label">Years Experience</div>
+                </div>
             </div>
-          </div>
-          <div class="vertical-line"></div>
+        </section>
 
-          <div class="education">
-            <h2 class="title-education">EDUCATON</h2>
-            <div id="first-education">
-              <div class="horizontal-line"></div>
-              <div class="actual-content">
-                <h2>
-                  Completed <span>SEE</span> with <span>4.00 GPA</span> from
-                  <span>
-                    <h3>Shankarnagar Durgadutta School</h3>
-                  </span>
-                  located at Rupandehi, Tilottama - 1
-                </h2>
-              </div>
+        <!-- Contact section starts -->
+        <section id="contact" class="contact-section" data-aos="fade-up" data-aos-delay="900">
+            <h1>Get In <span>Touch</span></h1>
+
+            <div class="contact-container">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Let's <span>Connect</span></h2>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>riteshpokhrel73@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+977 9815461099</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Butwal, Nepal</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>Ritesh Pokhrel</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Send <span>Message</span></h2>
+
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your name" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Enter subject" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
             </div>
-            <div id="second-education">
-              <div class="horizontal-line"></div>
-              <div class="actual-content">
-                <h2>
-                  Completed <span>+2</span> with <span>3.36 GPA</span> from
-                  <span>
-                    <h3>Tilottama Campus</h3>
-                  </span>
-                  located at Rupandehi, Tilottama - 5
-                </h2>
-              </div>
-            </div>
-            <div id="third-education">
-              <div class="horizontal-line"></div>
-              <div class="actual-content">
-                <h2>
-                  Studying <span>Bsc. CSIT</span><span></span> from
-                  <span>
-                    <h3>Butwal Multiple Campus</h3>
-                  </span>
-                  located at Rupandehi, Butwal - Golpark
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- Education section ends -->
-
-      <!-- contact section starts -->
-      <section id="contact" class="contact-section" >
-        <h1><span>Contact</span> Me</h1>
-        <div class="contact-container">
-          <div class="left-section" data-aos="flip-right" data-aos-delay="900">
-
-          <form onclick="window.open(this.href,'_blank');return false;" action="https://formsubmit.co/riteshpokhrel73@gmail.com" method="POST">
-            <h2>Send a Message</h2>
-            <input type="text" name="Name" placeholder="Full Name" required >
-            <input type="email" name="Email" placeholder=" Email Address" required>
-            <textarea rows="6" name="Message" placeholder="Message" required></textarea>
-            <button type="submit" class="btn">SUBMIT</button>
-          </form>
-        </div>
-  
-    <div class="middle-section" data-aos="zoom-in" data-aos-delay="900">
-    <h2>Lets <span>Chat !</span></h2>
-    <h3 class="letsBuild">Lets build something together</h3>
-    
-    <div id="location"  class="info-box">
-      <i class="fa-solid fa-location-dot"></i>
-      <div>
-      <h4>Visit me at</h4>
-      <h3><span>Tilottama - 1, Drivertole</span></h3>
-    </div>
-    </div>
-  
-    <div id="call" class="info-box" >
-      <i class="fa-solid fa-phone"></i>
-      <div>
-        <h4>Call me on</h4>
-        <h3><span>9815461099, 9767611249</span></h3>
-      </div>
-    </div>
-
-    <div id="mail" class="info-box">
-      <i class="fa-solid fa-envelope"></i>
-      <div>
-        <h4>Mail me on</h4>
-        <h4><span>riteshpokhrel73@gamil.com</span></h4>
-      </div>
-    </div>
-   </div>
-   <div class="right-section">
-    <div class="links-section" data-aos="zoom-in" data-aos-delay="900">
-      <a href="https://github.com/Ritesh-22893/"  onclick="window.open(this.href,'_blank');return false;"><i class="fa-brands fa-github"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="#"><i class="fa-brands fa-figma"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-   </div>
-</div>
-      </section>
-      <!-- contact section ends -->
-
-
+        </section>
+        <!-- Contact section ends -->
     </main>
 
-    
-    <footer class="footer-section" data-aos="fade-in" data-aos-delay="900">
-<!--       
-      <div class="logo">
-        <img src="./assets/profileImages/_RiteshLogo.png" alt="LOGO" />
-      </div> -->
+    <!-- Footer starts -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3 class="name-highlight">Ritesh Pokhrel</h3>
+                <p>
+                    Frontend Developer passionate about creating beautiful,
+                    functional websites and user experiences.
+                </p>
 
-      
-      <div class="links-section">
-          <a href="https://github.com/Ritesh-22893/"  onclick="window.open(this.href,'_blank');return false;"><i class="fa-brands fa-github"></i></a>
-          <a href="#" onclick="window.open(this.href,'_blank');return false;"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#" onclick="window.open(this.href,'_blank');return false;"><i class="fa-brands fa-figma"></i></a>
-          <a href="#" onclick="window.open(this.href,'_blank');return false;"><i class="fa-brands fa-instagram"></i></a>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <div class="footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>riteshpokhrel73@gmail.com</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+977 9815461099</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Butwal, Nepal</span>
+                </div>
+            </div>
         </div>
-      </div>
-    
-<!-- heart icon -->
- <div class="middle-part">
- <p>Copyright ©2025 All rights reserved </p>
- 
-</div>
 
-<div class="right-">
+        <div class="footer-bottom">
+            <p>
+                &copy; 2025 <span>Ritesh Pokhrel</span>. All rights
+                reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- Footer ends -->
 
-</div>
-
-<div class="right-part">
-  <!-- <span>Coding is like a fun game</span> -->
-  <p> made with  <i class="fa-solid fa-heart"></i> by </p>
-   <div class="logo">
-    <img src="./assets/profileImages/_RiteshLogo.png" alt="LOGO" />
-  </div>
-</div>
-
-  </footer>
-
-  <!-- for auto typing animation -->
+    <!-- For auto typing animation -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <!-- for animate on scroll -->
+    <!-- For animate on scroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init({duration:2000,offset :80});
+        AOS.init({ duration: 2000, offset: 80 });
     </script>
 
-    <!-- linking javascript file -->
+    <!-- Linking JavaScript file -->
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>

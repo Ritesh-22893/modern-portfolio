@@ -1,140 +1,411 @@
-/* About me section starts */
+/* Resume section starts */
 .resume-section {
-  margin-top: 3rem;
-  /* height: calc(100vh - 9rem); */
-  height: auto;
-}
-#resume h3 {
-  /* color:rgb(142, 154, 233); */
-  font-size: 1.6rem;
+  padding: 5rem 5% 3rem 5%;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  position: relative;
+  overflow: hidden;
 }
 
-.resume-section .resume-container {
-  display: flex;
-  padding: 1rem;
-  gap: 8vw;
-  /* background-color: rgb(40, 40, 110); */
-  height: inherit;
+.resume-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(79, 70, 229, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 70% 80%, rgba(6, 182, 212, 0.08) 0%, transparent 60%);
+  z-index: 1;
 }
-.resume-section .resume-container .resume-left {
-  /* background-color: rgb(79, 104, 104); */
-  width: 30%;
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-  gap: 1vh;
+
+.resume-section h1 {
+  text-align: center;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  margin-bottom: 3rem;
+  font-weight: 800;
+  position: relative;
+  z-index: 2;
 }
+
+.resume-section h1 span {
+  background: linear-gradient(45deg, #667eea, #764ba2, #f093fb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.resume-container {
+  display: flex;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.resume-left {
+  flex: 1;
+  max-width: 350px;
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: sticky;
+  top: 120px;
+}
+
+.resume-left h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.resume-left h2 span {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .resume-left p {
   font-size: 1.1rem;
-}
-.resume-left .btn {
-  margin-top: 0.5rem;
-  background-color: rgb(95, 110, 202);
-  background-color: rgb(62, 68, 110);
-  /* background-color: rgba(75, 97, 36, 0); */
-  /* width: 10rem; */
-  font-size: 1.1rem;
-  color: rgb(207, 193, 193);
-  color: white;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
 }
 
-.resume-left .btn:hover {
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
-  background-color: rgb(42, 57, 155);
-  background-color: rgb(28, 39, 112);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  background: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--border-color);
 }
 
-.resume-section .resume-container .resume-right {
-  width: 60%;
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+  transition: left 0.3s ease;
+  z-index: -1;
 }
-/* About me section ends */
 
-/* skills section */
+.btn:hover::before,
+.btn.primary-btn::before {
+  left: 0;
+}
 
-.resume-right .skills-section {
+.btn:hover,
+.btn.primary-btn {
+  color: white;
+  border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border-color: #667eea;
+}
+
+.resume-right {
+  flex: 2;
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills section */
+.skills-section {
+  display: none;
+}
+
+.skills-section.active {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
-.resume-right .skills-section i {
-  /* padding:1rem 3rem 3rem 0rem; */
-  /* background: red; */
-  font-size: 4rem;
-  margin: 1rem 3rem;
-  margin-left: 0;
+  animation: fadeIn 0.5s ease;
 }
 
-/* education section */
-.education-section {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.education-section .education-level {
-  /* background-color: rgb(28, 39, 112); */
-  padding: 1rem;
-  padding-top: 0.5rem;
-  border-radius: 1rem;
-}
-
-.education-section .education-level h4 {
-  color: rgb(142, 154, 233);
-  font-size: 1.1rem;
-}
-
-.education-section .education-level p {
-  color: rgb(142, 154, 233);
-  font-size: 1.1rem;
-}
-
-.experience-section #gracathon {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.experience-section img {
-  height:20rem;
-  /* width: ; */
-  aspect-ratio: 1/1;
-}
-
-.aboutme-section .aboutme-info {
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1.5rem;
   margin-top: 1rem;
-  width: 80%;
+}
+
+.skill-item {
   display: flex;
-  gap: 2vw;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: var(--bg-primary);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
 }
 
-
-.aboutme-section .heading {
-  margin-top: 0.5rem;
-  font-size: 1.1rem;
-}
-.aboutme-section .properties {
-  font-size: 1.1rem;
-  margin-top: 1.6rem;
+.skill-item:hover {
+  transform: translateY(-5px);
+  background: var(--hover-bg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+.skill-item i {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-@media (max-width:420px){
-  .resume-section .resume-container{
-    display: flex;
+.skill-item span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Education section */
+.education-section {
+  display: none;
+}
+
+.education-section.active {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: fadeIn 0.5s ease;
+}
+
+.education-level {
+  background: var(--bg-primary);
+  padding: 1.5rem;
+  border-radius: 15px;
+  border-left: 4px solid;
+  border-left-color: #667eea;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.education-level:hover {
+  transform: translateX(5px);
+  background: var(--hover-bg);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.education-level h4 {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.education-level p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Experience section */
+.experience-section {
+  display: none;
+}
+
+.experience-section.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+.experience-item {
+  background: var(--bg-primary);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+
+.experience-item img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* About me section */
+.aboutme-section {
+  display: none;
+}
+
+.aboutme-section.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+.aboutme-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.aboutme-section h2 span {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heading {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.aboutme-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.properties {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  background: var(--bg-primary);
+  border-radius: 8px;
+  border-left: 3px solid;
+  border-left-color: #667eea;
+  border: 1px solid var(--border-color);
+}
+
+.properties span {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* Light theme adjustments */
+[data-theme="light"] .resume-section::before {
+  background:
+    radial-gradient(circle at 30% 20%, rgba(79, 70, 229, 0.03) 0%, transparent 60%),
+    radial-gradient(circle at 70% 80%, rgba(6, 182, 212, 0.03) 0%, transparent 60%);
+}
+
+[data-theme="light"] .resume-left,
+[data-theme="light"] .resume-right {
+  background: var(--card-bg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .resume-section {
+    padding: 3rem 2rem;
+  }
+
+  .resume-container {
     flex-direction: column;
-    width: 100%;
-  }
-  .resume-section .resume-container  .resume-left{
-    width: 100vw;
-  }
-  .resume-container .resume-left p{
-    display: none;
+    gap: 2rem;
   }
 
-  .resume-left .btn {
-    width: 8rem;
-    font-size: 0.8rem;
+  .resume-left {
+    max-width: 100%;
+    position: static;
   }
-  .resume-section .resume-container {
-    padding-left: -2rem;
+
+  .buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+  }
+
+  .aboutme-info {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-section {
+    padding: 2rem 1rem;
+  }
+
+  .resume-left,
+  .resume-right {
+    padding: 1.5rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
