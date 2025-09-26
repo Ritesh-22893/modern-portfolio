@@ -1,5 +1,5 @@
 .project-section {
-  padding: 5rem 0;
+  padding: 3rem 0;
   background: var(--bg-primary);
   position: relative;
   overflow: hidden;
@@ -104,13 +104,13 @@
 }
 
 #project3 {
-  background: linear-gradient(135deg, rgba(245, 101, 101, 0.15), rgba(190, 24, 93, 0.1));
-  border-color: rgba(245, 101, 101, 0.3);
+  background: linear-gradient(135deg, rgba(185, 98, 16, 0.1), rgba(5, 150, 105, 0.05));
+  border-color: rgba(185, 98, 16, 0.1, 0.2);
 }
 
 #project4 {
-  background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(245, 158, 11, 0.1));
-  border-color: rgba(251, 191, 36, 0.3);
+  background: linear-gradient(135deg, rgba(185, 98, 16, 0.1), rgba(5, 150, 105, 0.05));
+  border-color: rgba(185, 98, 16, 0.1, 0.2);
 }
 
 /* Shine effect on hover */
@@ -288,18 +288,19 @@
 }
 
 [data-theme="light"] #project2 {
+
   background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.05));
   border-color: rgba(16, 185, 129, 0.2);
 }
 
 [data-theme="light"] #project3 {
-  background: linear-gradient(135deg, rgba(245, 101, 101, 0.1), rgba(190, 24, 93, 0.05));
-  border-color: rgba(245, 101, 101, 0.2);
+  background: linear-gradient(135deg, rgba(185, 98, 16, 0.1), rgba(5, 150, 105, 0.05));
+  border-color: rgba(185, 98, 16, 0.1, 0.2);
 }
 
 [data-theme="light"] #project4 {
-  background: linear-gradient(135deg, rgba(251, 191, 36, 0.1), rgba(245, 158, 11, 0.05));
-  border-color: rgba(251, 191, 36, 0.2);
+  background: linear-gradient(135deg, rgba(251, 194, 36, 0.1), rgba(245, 158, 11, 0.05));
+  border-color: rgba(251, 211, 36, 0.2);
 }
 
 [data-theme="light"] .tech-tag {
